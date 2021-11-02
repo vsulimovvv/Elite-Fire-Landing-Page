@@ -12,6 +12,7 @@
   &__bottom {
     display: grid;
     grid-template-columns: minmax(auto, 570px) minmax(auto, 540px);
+
     gap: 85px;
 
     @include breakpointsMaxW($bp-991) {
@@ -59,10 +60,26 @@
   }
 
   &__box {
-    margin-bottom: 50px;
+    &--fuel-block {
+      .specifications__text {}
+    }
+
+    &--decisions {
+      .specifications__text {}
+    }
+
+    &--accessories {
+      .specifications__text {}
+    }
+
   }
 
-  &__subtitle {
+  &__shedule {
+    margin-bottom: 60px;
+  }
+
+  &__name-list {
+    display: block;
     font-size: 18px;
     line-height: 27px;
     color: var(--color-unaccent);
@@ -84,6 +101,7 @@
     font-size: 14px;
     line-height: 27px;
     letter-spacing: -0.005px;
+    margin-bottom: 50px;
 
     &--line {
       padding-bottom: 25px;
@@ -91,35 +109,3 @@
   }
 }
 
-.slider {
-  // max-width: 537px;
-  width: 100%;
-  height: 346px;
-  background-color: #000;
-
-  .swiper-slide {
-    width: 100%;
-    height: 100%;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .arrows {
-    position: absolute;
-    bottom: 40px;
-    left: 45px;
-
-    width: 52px;
-    height: 18px;
-  }
-
-  .swiper-button-next {
-    &::after {}
-  }
-
-
-}

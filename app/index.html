@@ -33,35 +33,33 @@
   <div class="wrapper">
     <header class="header">
   <div class="container">
-    <div class="header__wrapper">
+    <nav class="header__menu menu">
       <a class="header__logo" href="#">
         <img src="images/logo.svg" alt="Лого">
       </a>
 
-      <nav class="header__menu menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="#">Продукция</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Конструктор</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Опыт</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
-          </li>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="#">Продукция</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Конструктор</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Опыт</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Контакты</a>
+        </li>
+      </ul>
 
-        </ul>
+      <a class="menu__phone" aria-label="Позвоните нам" href="tel:999999999">
+        <svg>
+          <use xlink:href="images/sprite.svg#phone-link"></use>
+        </svg>
+      </a>
+    </nav>
 
-        <a class="menu__phone" href="#">
-          <svg>
-            <use xlink:href="images/sprite.svg#phone-link"></use>
-          </svg>
-        </a>
-      </nav>
-    </div>
   </div>
 </header>
     <main class="main">
@@ -93,7 +91,7 @@
         мы добились горения потрясающей красоты</p>
     </div>
     <div class="advantages__img">
-      <img src="images/content/advantages.png" alt="">
+      <img src="images/content/advantages.png" alt="Преисущества">
     </div>
     <ul class="advantages__items">
       <li class="advantages__item advantages__item--flame">
@@ -126,10 +124,14 @@
         <p> В наши топливные блоки встроен
           мощный насос.</p>
       </div>
-      <div class="refueling__banner">
-        <p>3,5 <span>минуты</span></p>
-        <span class="span">и бак наполнен
-          на 100% </span>
+      <div class="refueling__feature feature">
+        <div class="feature__bold">
+          <p>3,5 <span>минуты</span></p>
+        </div>
+        <div class="feature__normal">
+          <span>и бак наполнен
+            на 100%</span>
+        </div>
       </div>
       <div class="refueling__bottom">
         <div class="refueling__actions">
@@ -167,88 +169,93 @@
 
     <div class="specifications__top">
       <div class="specifications__col">
-        <h3 class="specifications__title">Топливный блок</h3>
-        <div class="specification__box specification__box--one">
+
+        <div class="specifications__box specifications__box--fuel-block">
+          <h3 class="specifications__title">Топливный блок</h3>
           <div class="specifications__text specifications__text--line">Лицевая панель из жаропрочной нержавеющей стали
             толщиной 5 мм
           </div>
+
           <div class="specifications__img">
             <div class="specifications__line"></div>
-            <img src="images/content/spec-1.png" alt="">
+            <img src="images/content/spec-1.png" alt="Особенные характеристики">
           </div>
-        </div>
-        <div class="specifications__box">
-          <h4 class="specifications__subtitle">Варианты отделки</h4>
-          <div class="specifications__lists">
-            <ul class="specifications__list">
-              <li class="specifications__item">
-                черный матовый
-              </li>
-              <li class="specifications__item">
-                шлифованная сталь
-              </li>
-            </ul>
-            <ul class="specifications__list">
-              <li class="specifications__item">
-                керамика
-              </li>
-              <li class="specifications__item">
-                нитрид титана
-              </li>
-            </ul>
+
+          <span class="specifications__name-list">Варианты отделки</span>
+
+          <div class="specifications__shedule">
+            <div class="specifications__lists">
+              <ul class="specifications__list">
+                <li class="specifications__item">
+                  черный матовый
+                </li>
+                <li class="specifications__item">
+                  шлифованная сталь
+                </li>
+              </ul>
+              <ul class="specifications__list">
+                <li class="specifications__item">
+                  керамика
+                </li>
+                <li class="specifications__item">
+                  нитрид титана
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="specifications__box">
-          <h4 class="specifications__subtitle">Стандартная комплектация</h4>
-          <div class="specifications__lists">
-            <ul class="specifications__list">
-              <li class="specifications__item">
-                Управление с кнопок
-              </li>
-              <li class="specifications__item">
-                С помощью пульта
-              </li>
-              <li class="specifications__item">
-                Умный дом
-              </li>
-              <li class="specifications__item">
-                Без шумность
-              </li>
-              <li class="specifications__item">
-                Датчик С02
-              </li>
-              <li class="specifications__item">
-                Датчик пролива
-              </li>
-            </ul>
-            <ul class="specifications__list">
-              <li class="specifications__item">
-                Датчик температуры
-              </li>
-              <li class="specifications__item">
-                Датчик наклона
-              </li>
-              <li class="specifications__item">
-                Дисплей
-              </li>
-              <li class="specifications__item">
-                Индикатор уровня топлива
-              </li>
-              <li class="specifications__item">
-                Блокировка залива топлива
-              </li>
-              <li class="specifications__item">
-                Кнопка отключения от сети на лицевой панели
-              </li>
-            </ul>
+
+          <div class="specifications__shedule">
+            <span class="specifications__name-list">Стандартная комплектация</span>
+            <div class="specifications__lists">
+              <ul class="specifications__list">
+                <li class="specifications__item">
+                  Управление с кнопок
+                </li>
+                <li class="specifications__item">
+                  С помощью пульта
+                </li>
+                <li class="specifications__item">
+                  Умный дом
+                </li>
+                <li class="specifications__item">
+                  Без шумность
+                </li>
+                <li class="specifications__item">
+                  Датчик С02
+                </li>
+                <li class="specifications__item">
+                  Датчик пролива
+                </li>
+              </ul>
+              <ul class="specifications__list">
+                <li class="specifications__item">
+                  Датчик температуры
+                </li>
+                <li class="specifications__item">
+                  Датчик наклона
+                </li>
+                <li class="specifications__item">
+                  Дисплей
+                </li>
+                <li class="specifications__item">
+                  Индикатор уровня топлива
+                </li>
+                <li class="specifications__item">
+                  Блокировка залива топлива
+                </li>
+                <li class="specifications__item">
+                  Кнопка отключения от сети на лицевой панели
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="specifications__col">
-        <div class="specifications__col-top">
-          <h3 class="specifications__title specifications__title--p">Очаги для встраивания в нишу
-            <br> по Вашим размерам</h3>
 
+      <div class="specifications__col">
+        <div class="specifications__box--sizes">
+          <h3 class="specifications__title">Очаги для встраивания в нишу
+            <br> по Вашим размерам</h3>
           <div class="specifications__text">
             <p>Короб выполненый из нержавеющей стали 2 мм или холоднокатанной стали 3 мм</p>
             <p>Окрашен кремнийорганической и акриловой краской</p>
@@ -260,82 +267,95 @@
             <p>Размер ограничен только Вашей фантазией</p>
             <p>Отделка стемалитом и цветными металлами</p>
           </div>
-        </div>
-        <div class="slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img
-                src="https://images.unsplash.com/photo-1517594422361-5eeb8ae275a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
-                alt=""></div>
-            <div class="swiper-slide"><img
-                src="https://images.unsplash.com/photo-1507048947301-7afc2aca0edc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80"
-                alt=""></div>
-            <div class="swiper-slide"><img
-                src="https://images.unsplash.com/photo-1523861751938-121b5323b48b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=862&q=80"
-                alt=""></div>
-            <div class="swiper-slide"><img
-                src="https://images.unsplash.com/photo-1583248352195-d3a8e766edf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
-                alt=""></div>
-          </div>
-          <div class="arrows">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+
+
+          <div class="specifications__slider slider swiper">
+            <ul class="slider__slides swiper-wrapper">
+              <li class="slider__slide swiper-slide"><img
+                  src="https://images.unsplash.com/photo-1517594422361-5eeb8ae275a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                  alt="Характеристика"></li>
+              <li class="slider__slide swiper-slide"><img
+                  src="https://images.unsplash.com/photo-1507048947301-7afc2aca0edc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80"
+                  alt="Характеристика"></li>
+              <li class="slider__slide swiper-slide"><img
+                  src="https://images.unsplash.com/photo-1523861751938-121b5323b48b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=862&q=80"
+                  alt="Характеристика"></li>
+              <li class="slider__slide swiper-slide"><img
+                  src="https://images.unsplash.com/photo-1583248352195-d3a8e766edf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+                  alt="Характеристика"></li>
+            </ul>
+            <div class="slider__arrows arrows">
+              <button class="arrows__next swiper-button-next" type="button" aria-label="Посмотреть следующий слайд"></button>
+              <button class="arrows__prev swiper-button-prev" type="button" aria-label="Посмотреть предыдущий слайд"></button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="specifications__bottom">
+
       <div class="specification__col">
-        <div class="specifications__col-top">
+        <div class="specifications__box specifications__box--decisions">
+
           <h3 class="specifications__title">Готовые решения</h3>
-          <p>Напольные отдельно стоящие камины.</p>
-          <p>Настенные очаги которые вешаются как ТВ. Подвесные модели.</p>
-        </div>
-        <div class="slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img
-                src="https://images.unsplash.com/photo-1517594422361-5eeb8ae275a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
-                alt=""></div>
-            <div class="swiper-slide"><img
-                src="https://images.unsplash.com/photo-1507048947301-7afc2aca0edc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80"
-                alt=""></div>
-            <div class="swiper-slide"><img
-                src="https://images.unsplash.com/photo-1523861751938-121b5323b48b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=862&q=80"
-                alt=""></div>
-            <div class="swiper-slide"><img
-                src="https://images.unsplash.com/photo-1583248352195-d3a8e766edf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
-                alt=""></div>
+          <div class="specifications__text">
+            <p>Напольные отдельно стоящие камины.</p>
+            <p>Настенные очаги которые вешаются как ТВ. Подвесные модели.</p>
           </div>
-          <div class="arrows">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+
+          <div class="specifications__slider slider swiper">
+            <ul class="slider__slides swiper-wrapper">
+              <li class="slider__slide swiper-slide"><img
+                  src="https://images.unsplash.com/photo-1517594422361-5eeb8ae275a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                  alt="Готовое решение"></li>
+              <li class="slider__slide swiper-slide"><img
+                  src="https://images.unsplash.com/photo-1507048947301-7afc2aca0edc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80"
+                  alt="Готовое решение"></li>
+              <li class="slider__slide swiper-slide"><img
+                  src="https://images.unsplash.com/photo-1523861751938-121b5323b48b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=862&q=80"
+                  alt="Готовое решение"></li>
+              <li class="slider__slide swiper-slide"><img
+                  src="https://images.unsplash.com/photo-1583248352195-d3a8e766edf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+                  alt="Готовое решение"></li>
+            </ul>
+            <div class="slider__arrows arrows">
+              <button class="arrows__next swiper-button-next" type="button" aria-label="Посмотреть следующий слайд"></button>
+              <button class="arrows__prev swiper-button-prev" type="button" aria-label="Посмотреть предыдущий слайд"></button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="specification__col">
-        <div class="specifications__col-top">
-          <h3 class="specifications__title">Аксессуары</h3>
-          <p>Защитные экраны, Дверцы, Стемалит, Дрова,
-            Камни, Кастомные пульты</p>
-        </div>
 
-        <div class="slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img
-                src="https://images.unsplash.com/photo-1517594422361-5eeb8ae275a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
-                alt=""></div>
-            <div class="swiper-slide"><img
-                src="https://images.unsplash.com/photo-1507048947301-7afc2aca0edc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80"
-                alt=""></div>
-            <div class="swiper-slide"><img
-                src="https://images.unsplash.com/photo-1523861751938-121b5323b48b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=862&q=80"
-                alt=""></div>
-            <div class="swiper-slide"><img
-                src="https://images.unsplash.com/photo-1583248352195-d3a8e766edf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
-                alt=""></div>
+      <div class="specification__col">
+        <div class="specifications__box specifications__box--accessories">
+          <h3 class="specifications__title">Аксессуары</h3>
+
+          <div class="specifications__text">
+            <p>Защитные экраны, Дверцы, Стемалит, Дрова, Камни, Кастомные пульты</p>
           </div>
-          <div class="arrows">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+
+          <div class="specifications__slider slider swiper">
+            <ul class="slider__slides swiper-wrapper">
+              <li class="slider__slide swiper-slide"><img
+                  src="https://images.unsplash.com/photo-1517594422361-5eeb8ae275a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                  alt="Аксессуар 1"></li>
+              <li class="slider__slide swiper-slide"><img
+                  src="https://images.unsplash.com/photo-1507048947301-7afc2aca0edc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80"
+                  alt="Аксессуар 2"></li>
+              <li class="slider__slide swiper-slide"><img
+                  src="https://images.unsplash.com/photo-1523861751938-121b5323b48b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=862&q=80"
+                  alt="Аксессуар 3"></li>
+              <li class="slider__slide swiper-slide"><img
+                  src="https://images.unsplash.com/photo-1583248352195-d3a8e766edf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+                  alt="Аксессуар 4"></li>
+            </ul>
+            <div class="slider__arrows arrows">
+              <button class="arrows__next swiper-button-next" type="button"
+                aria-label="Посмотреть следующий слайд"></button>
+              <button class="arrows__prev swiper-button-prev" type="button"
+                aria-label="Посмотреть предыдущий слайд"></button>
+            </div>
           </div>
         </div>
       </div>
@@ -566,8 +586,8 @@
   <div class="footer__bottom">
     <div class="container">
       <div class="footer__bottom-wrapper">
-        <a class="footer__logo" href="">
-          <img src="images/logo-no-text.svg" alt="">
+        <a class="footer__logo" href="#">
+          <img src="images/logo-no-text.svg" alt="Логотип">
         </a>
         <div class="footer__text">
           2020-2021

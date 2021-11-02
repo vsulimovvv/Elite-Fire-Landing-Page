@@ -157,35 +157,32 @@ body {
   }
 }
 
-.wrapper {
+.arrows {
+  &__next,
+  &__prev {
+    width: 18px;
+    height: 18px;
+    top: 67%;
 
-  // background-image: linear-gradient(to bottom, #000000, #0a0a0a, #121211, #181817, #1d1d1c);
-}
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
 
-.swiper-button-next,
-.swiper-button-prev {
-  width: 18px;
-  height: 18px;
-  top: 67%;
-
-  &::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+    }
   }
-}
 
-.swiper-button-next {
-  background-image: url('../images/icons/chevron-left.svg');
-  transform: rotate(180deg);
-  right: 0;
-}
+  &__next {
+    background-image: url('../images/icons/chevron-left.svg');
+    transform: rotate(180deg);
+    right: 0;
+  }
 
-.swiper-button-prev {
-  background-image: url('../images/icons/chevron-left.svg');
-  left: 0;
+  &__prev {
+    background-image: url('../images/icons/chevron-left.svg');
+    left: 0;
+  }
 }

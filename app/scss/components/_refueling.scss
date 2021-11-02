@@ -58,56 +58,7 @@
     }
   }
 
-  &__banner {
-    position: absolute;
-    top: 58px;
-    right: 105px;
 
-    font-family: $ScaniaSansCY;
-    background: var(--gradient-radial);
-    width: 151px;
-    height: 151px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    text-align: center;
-    color: var(--color-black);
-
-    @include breakpointsMaxW($bp-991) {
-      top: -20px;
-      right: 30px;
-    }
-
-    @include breakpointsMaxW($bp-768) {
-      bottom: 0;
-      right: 0;
-      top: initial;
-    }
-
-    .span {
-      max-width: 90px;
-      font-weight: 400;
-      font-size: 10px;
-      line-height: 14px;
-      letter-spacing: 0.01px;
-    }
-
-    P {
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 1;
-      margin-bottom: 10px;
-
-      span {
-        display: block;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0.01px;
-      }
-    }
-  }
 
   &__bottom {
     font-family: $LabGrotesque;
@@ -219,4 +170,58 @@
   }
 
 
+}
+
+.feature {
+  position: absolute;
+  top: 58px;
+  right: 105px;
+
+  z-index: $z-10;
+
+  font-family: $ScaniaSansCY;
+  background: var(--gradient-radial);
+  width: 151px;
+  height: 151px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--color-black);
+
+  @include breakpointsMaxW($bp-991) {
+    top: -20px;
+    right: 30px;
+  }
+
+  @include breakpointsMaxW($bp-768) {
+    bottom: 0;
+    right: 0;
+    top: initial;
+  }
+
+
+  &__bold {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 10px;
+
+    span {
+      display: block;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.01px;
+    }
+  }
+
+  &__normal {
+    max-width: 90px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.01px;
+  }
 }
