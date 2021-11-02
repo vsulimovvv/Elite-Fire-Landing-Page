@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-size: calc(300px + (700 - 300) * ((100vw - 320px) / (1225 - 320)));
     background-position: right center;
-
+    
     @include breakpointsMinW($bp-991) {
       background-size: 700px;
     }

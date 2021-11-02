@@ -24,6 +24,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    // background-attachment: fixed;
     max-width: 100%;
     width: 100%;
     height: 970px;
@@ -74,7 +75,6 @@
     //   }
     // }
   }
-
 
   &__descr {
     text-align: center;

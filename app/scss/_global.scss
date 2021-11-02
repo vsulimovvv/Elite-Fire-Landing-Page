@@ -80,7 +80,7 @@ body {
   font-family: inherit;
   font-weight: 500;
   border: 1px solid transparent;
-  transition: 350ms ease;
+  transition: 250ms ease;
 
   &::after,
   &::before {
@@ -110,7 +110,7 @@ body {
     transform: scale(0.98);
   }
 
-  &--bg-anim {
+  &--shadow-anim {
 
     &:hover {
       box-shadow: 0 14px 28px rgba(249, 139, 77, 0.15), 0 10px 10px rgba(249, 139, 77, 0.15);
@@ -120,17 +120,6 @@ body {
     &:active {
       transform: scale(0.98) translateY(-6px);
       box-shadow: none;
-    }
-  }
-
-  &--scale-anim {
-
-    &:hover {
-      box-shadow: 10px 10px rgba(249, 139, 77, 0.2);
-
-      &:active {
-        transform: scale(0.9);
-      }
     }
   }
 
