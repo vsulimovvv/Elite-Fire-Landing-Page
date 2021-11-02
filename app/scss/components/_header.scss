@@ -1,0 +1,17 @@
+.header {
+  padding-top: calc(10px + (40 - 10) * ((100vw - 320px) / (1225 - 320)));
+  background-color: #1E1E1D;
+  // background-image: linear-gradient(to bottom, #1e1e1d, #1e1e1d, #1f1f1d, #1f1f1e, #201f1e);
+
+  @include breakpointsMinW($bp-container) {
+    padding-top: 76px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {}
+}

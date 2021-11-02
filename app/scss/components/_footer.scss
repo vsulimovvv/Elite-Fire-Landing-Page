@@ -1,0 +1,144 @@
+.footer {
+  padding-top: 72px;
+  margin-top: -1px;
+  padding-bottom: 18px;
+  background-color: #121212;
+
+  &__title {
+    margin-bottom: 70px;
+
+    @include breakpointsMaxW($bp-768) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 76px;
+
+    @include breakpointsMaxW($bp-991) {
+      flex-direction: column;
+    }
+  }
+
+  &__lists {
+    display: flex;
+    max-width: 660px;
+    width: 100%;
+    justify-content: space-between;
+
+    @include breakpointsMaxW($bp-576) {
+      flex-direction: column;
+    }
+  }
+
+  &__list {
+    @include breakpointsMaxW($bp-576) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+
+      @include breakpointsMaxW($bp-576) {
+        margin-bottom: 0;
+      }
+    }
+
+    address {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 33px;
+      max-width: 287px;
+      color: var(--color-white);
+    }
+
+    a {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 36px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__label {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 36px;
+    color: #949494;
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 280px;
+
+    .footer__label {
+      margin-bottom: 10px;
+    }
+
+    a {
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 33px;
+      color: #FFFFFF;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid #262626;
+    padding: 42px 0;
+  }
+
+  &__bottom-wrapper {
+    // display: grid;grid-template-columns: repeat( );
+    display: flex;
+    align-items: center;
+
+    @include breakpointsMaxW($bp-991) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__logo {
+    margin-right: 110px;
+
+    @include breakpointsMaxW($bp-991) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    color: #6D6D6D;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+
+    &:not(:last-child) {
+      margin-right: 47px;
+
+      @include breakpointsMaxW($bp-991) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &:last-child {
+      margin-left: auto;
+
+      @include breakpointsMaxW($bp-991) {
+        margin-left: 0;
+      }
+    }
+  }
+}

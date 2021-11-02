@@ -1,0 +1,222 @@
+.refueling {
+  padding-top: 97px;
+  padding-bottom: 168px;
+  margin-top: -1px;
+  background-image: linear-gradient(to bottom, #22211e, #21201e, #20201e, #1f1f1d, #1e1e1d);
+
+  &__title {
+    margin-bottom: 23px;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    padding-left: 83px;
+
+    background-image: url('../images/content/refueling-2.png');
+    background-repeat: no-repeat;
+    background-size: 880px 860px;
+    background-position: 133% 49%;
+
+    @include breakpointsMaxW($bp-container) {
+      background-size: 660px 660px;
+      background-position: 100% center;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      background-size: 560px 560px;
+      background-position: 125% center;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      background-size: contain;
+      background-position: right top;
+      padding-left: 0;
+    }
+  }
+
+  &__text {
+    margin-bottom: 90px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 33px;
+    max-width: 376px;
+    letter-spacing: 0.01px;
+
+    @include breakpointsMaxW($bp-768) {
+      color: var(--color-white);
+    }
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      &:last-child {
+        max-width: 340px;
+      }
+    }
+  }
+
+  &__banner {
+    position: absolute;
+    top: 58px;
+    right: 105px;
+
+    font-family: $ScaniaSansCY;
+    background: var(--gradient-radial);
+    width: 151px;
+    height: 151px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--color-black);
+
+    @include breakpointsMaxW($bp-991) {
+      top: -20px;
+      right: 30px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      bottom: 0;
+      right: 0;
+      top: initial;
+    }
+
+    .span {
+      max-width: 90px;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 14px;
+      letter-spacing: 0.01px;
+    }
+
+    P {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1;
+      margin-bottom: 10px;
+
+      span {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.01px;
+      }
+    }
+  }
+
+  &__bottom {
+    font-family: $LabGrotesque;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin: 0 auto;
+    transform: translateX(-46px);
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-white);
+    letter-spacing: 0.01px;
+
+    @include breakpointsMaxW($bp-991) {
+      margin: 0;
+      transform: translateX(0);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    margin-bottom: 18px;
+  }
+
+  &__action {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    &:not(:last-child) {
+      margin-right: 70px;
+    }
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 31px;
+      height: 1px;
+      background-color: #949494;
+      top: 47%;
+      transform: translateY(-50%);
+      right: -52px;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+    &--house {
+      background-image: url('../images/icons/hose-u.svg');
+    }
+
+    &--power-button {
+      background-image: url('../images/icons/power-button.svg');
+    }
+  }
+
+  .circle-blur {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: -70px;
+    right: -70px;
+    width: 673px;
+    height: 521px;
+    background-image: url('../images/decor/refueling-blur.png');
+
+    @include breakpointsMaxW($bp-container) {
+      display: none;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-accent);
+    border-radius: 50%;
+
+    &--small {
+      top: 46.5%;
+      right: 35.5%;
+      width: 98px;
+      height: 98px;
+
+      @include breakpointsMaxW($bp-container) {
+        display: none;
+      }
+    }
+
+    &--big {
+      top: 57%;
+      right: 21%;
+      height: 194px;
+      width: 194px;
+
+      @include breakpointsMaxW($bp-container) {
+        display: none;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Fire - Автоматические Биокамины</title>
+
+  <!-- FancyBox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!--  Font Family Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!--  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.css"
+    integrity="sha512-MKxcSu/LDtbIYHBNAWUQwfB3iVoG9xeMCm32QV5hZ/9lFaQZJVaXfz9aFa0IZExWzCpm7OWvp9zq9gVip/nLMg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="header__logo" href="#">
+        <img src="images/logo.svg" alt="Лого">
+      </a>
+
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Продукция</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Конструктор</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Опыт</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+
+        </ul>
+
+        <a class="menu__phone" href="#">
+          <svg>
+            <use xlink:href="images/sprite.svg#phone-link"></use>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <section class="hero">
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__offer">
+        <h1 class="hero__title">Автоматические
+          биокамины
+        </h1>
+        <p class="hero__descr">от <span>99 000₽</span></p>
+        <div class="hero__benefits">
+          <div class="hero__benefit hero__benefit--production">
+            <p> Свое производство</p>
+          </div>
+          <div class="hero__benefit hero__benefit--delivery">
+            <p> Доставка в любую точку мира</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="advantages">
+  <div class="container">
+    <h2 class="advantages__title section-title">Настоящий высокий огонь у вас дома</h2>
+    <div class="advantages__descr">
+      <p>Благодаря специальной технологии горения биоэтанола
+        мы добились горения потрясающей красоты</p>
+    </div>
+    <div class="advantages__img">
+      <img src="images/content/advantages.png" alt="">
+    </div>
+    <ul class="advantages__items">
+      <li class="advantages__item advantages__item--flame">
+        <p class="">
+          Пламя яркое, высотой
+          до 20 сантиметров
+        </p>
+      </li>
+      <li class="advantages__item advantages__item--biofuel">
+        <p class="">
+          Работает такой камин
+          на биотопливе          
+        </p>
+      </li>
+      <li class="advantages__item advantages__item--smoke">
+        <p class="">
+          Он не дымит и не пахнет
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="refueling">
+  <div class="container">
+    <div class="refueling__wrapper">
+      <h2 class="refueling__title section-title">заправка</h2>
+      <div class="refueling__text">
+        <p>Внутри не просто труба. Спроектированный нами бак, самого большого обьема среди всех производителей
+        </p>
+        <p> В наши топливные блоки встроен
+          мощный насос.</p>
+      </div>
+      <div class="refueling__banner">
+        <p>3,5 <span>минуты</span></p>
+        <span class="span">и бак наполнен
+          на 100% </span>
+      </div>
+      <div class="refueling__bottom">
+        <div class="refueling__actions">
+          <div class="refueling__action refueling__action--house"></div>
+          <div class="refueling__action refueling__action--power-button"></div>
+        </div>
+        <p>Достаточно вставить шланг
+          Нажать кнопку</p>
+      </div>
+
+      <div class="circle-blur"></div>
+      <div class="circle circle--small"></div>
+      <div class="circle circle--big"></div>
+    </div>
+  </div>
+</section>
+      <section class="smart">
+  <div class="container">
+    <div class="smart__wrapper">
+      <div class="smart__text smart__text--yandex">Яндекс.Алиса</div>
+      <div class="smart__text smart__text--xiaomi">Mi Home Xiaomi</div>
+      <h2 class="smart__title section-title">
+        <span>Умный камин</span>
+        <span>очень умный</span>
+      </h2>
+      <div class="smart__descr">
+        <p>Даже если у Вас нет своего решения по умному дому. Мы отлично ладим с Яндекс.Алиса и Mi Home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+      <div class="specifications">
+  <div class="container">
+    <h2 class="visually-hidden">Характеристики</h2>
+
+    <div class="specifications__top">
+      <div class="specifications__col">
+        <h3 class="specifications__title">Топливный блок</h3>
+        <div class="specification__box specification__box--one">
+          <div class="specifications__text specifications__text--line">Лицевая панель из жаропрочной нержавеющей стали
+            толщиной 5 мм
+          </div>
+          <div class="specifications__img">
+            <div class="specifications__line"></div>
+            <img src="images/content/spec-1.png" alt="">
+          </div>
+        </div>
+        <div class="specifications__box">
+          <h4 class="specifications__subtitle">Варианты отделки</h4>
+          <div class="specifications__lists">
+            <ul class="specifications__list">
+              <li class="specifications__item">
+                черный матовый
+              </li>
+              <li class="specifications__item">
+                шлифованная сталь
+              </li>
+            </ul>
+            <ul class="specifications__list">
+              <li class="specifications__item">
+                керамика
+              </li>
+              <li class="specifications__item">
+                нитрид титана
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="specifications__box">
+          <h4 class="specifications__subtitle">Стандартная комплектация</h4>
+          <div class="specifications__lists">
+            <ul class="specifications__list">
+              <li class="specifications__item">
+                Управление с кнопок
+              </li>
+              <li class="specifications__item">
+                С помощью пульта
+              </li>
+              <li class="specifications__item">
+                Умный дом
+              </li>
+              <li class="specifications__item">
+                Без шумность
+              </li>
+              <li class="specifications__item">
+                Датчик С02
+              </li>
+              <li class="specifications__item">
+                Датчик пролива
+              </li>
+            </ul>
+            <ul class="specifications__list">
+              <li class="specifications__item">
+                Датчик температуры
+              </li>
+              <li class="specifications__item">
+                Датчик наклона
+              </li>
+              <li class="specifications__item">
+                Дисплей
+              </li>
+              <li class="specifications__item">
+                Индикатор уровня топлива
+              </li>
+              <li class="specifications__item">
+                Блокировка залива топлива
+              </li>
+              <li class="specifications__item">
+                Кнопка отключения от сети на лицевой панели
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="specifications__col">
+        <div class="specifications__col-top">
+          <h3 class="specifications__title specifications__title--p">Очаги для встраивания в нишу
+            <br> по Вашим размерам</h3>
+
+          <div class="specifications__text">
+            <p>Короб выполненый из нержавеющей стали 2 мм или холоднокатанной стали 3 мм</p>
+            <p>Окрашен кремнийорганической и акриловой краской</p>
+            <p>Каждый комплектуется керамическим матом</p>
+            <p>Лучшая теплоизолированость из доступных</p>
+            <p>Изготавливается исключительно под Ваши размеры</p>
+            <p>Наши технологи спроектируют техническое задание для ниши учитывая</p>
+            <p>особенности Вашего ремонта.</p>
+            <p>Размер ограничен только Вашей фантазией</p>
+            <p>Отделка стемалитом и цветными металлами</p>
+          </div>
+        </div>
+        <div class="slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1517594422361-5eeb8ae275a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1507048947301-7afc2aca0edc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1523861751938-121b5323b48b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=862&q=80"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1583248352195-d3a8e766edf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+                alt=""></div>
+          </div>
+          <div class="arrows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="specifications__bottom">
+      <div class="specification__col">
+        <div class="specifications__col-top">
+          <h3 class="specifications__title">Готовые решения</h3>
+          <p>Напольные отдельно стоящие камины.</p>
+          <p>Настенные очаги которые вешаются как ТВ. Подвесные модели.</p>
+        </div>
+        <div class="slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1517594422361-5eeb8ae275a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1507048947301-7afc2aca0edc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1523861751938-121b5323b48b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=862&q=80"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1583248352195-d3a8e766edf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+                alt=""></div>
+          </div>
+          <div class="arrows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="specification__col">
+        <div class="specifications__col-top">
+          <h3 class="specifications__title">Аксессуары</h3>
+          <p>Защитные экраны, Дверцы, Стемалит, Дрова,
+            Камни, Кастомные пульты</p>
+        </div>
+
+        <div class="slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1517594422361-5eeb8ae275a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1507048947301-7afc2aca0edc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1523861751938-121b5323b48b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=862&q=80"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="https://images.unsplash.com/photo-1583248352195-d3a8e766edf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+                alt=""></div>
+          </div>
+          <div class="arrows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <section class="about">
+  <div class="container">
+    <div class="about__offer">
+      <p class="about__text">Получите каталог с моделями и ценами на всю нашу продукцию</p>
+      <button class="about__btn btn btn--scale-anim">Получить каталог!</button>
+    </div>
+
+    <div class="about__box about-box">
+      <h2 class="about-box__title section-title">Есть задача? Есть решение!</h2>
+      <ul class="about-box__list">
+        <li class="about-box__item">
+          <img
+            src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80"
+            alt="">
+        </li>
+        <li class="about-box__item">
+          <img
+            src="https://images.unsplash.com/photo-1635240009912-f2304ad595ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2068&q=80"
+            alt="">
+        </li>
+        <li class="about-box__item">
+          <img
+            src="https://images.unsplash.com/photo-1588173254663-28f1680f6cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            alt="">
+        </li>
+      </ul>
+    </div>
+    <div class="about__box about-box">
+      <h2 class="about-box__title section-title">Почемы мы можем многое? <br>
+        Свои люди. Свои станки. Своя лаборатория</h2>
+      <ul class="about-box__list">
+        <li class="about-box__item">
+          <img
+            src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80"
+            alt="">
+        </li>
+        <li class="about-box__item">
+          <img
+            src="https://images.unsplash.com/photo-1635240009912-f2304ad595ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2068&q=80"
+            alt="">
+        </li>
+        <li class="about-box__item">
+          <img
+            src="https://images.unsplash.com/photo-1588173254663-28f1680f6cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+      <section class="constructor">
+  <div class="container">
+    <h2 class="constructor__title section-title">вы автор вашего камина</h2>
+
+    <div class="constructor__wrapper">
+      <div class="constructor__top">
+        <div class="constructor__preview">
+          <img src="images/content/constructor.jpg" alt="">
+        </div>
+        <div class="constructor__details details-constructor">
+          <div class="details-constructor length">
+            <h4 class="details-constructor__title">Выберите длину</h4>
+
+            <div class="details-constructor__box">
+              <span class="details-constructor__text">0.5 м</span>
+              <div class="details-constructor__range">
+                <span class="details-constructor__bar">
+                  <span class="fill" style="width: 65%"></span>
+                </span>
+                <input class="details-constructor__input input-range" step="0.5" min="0.5" max="10" value="6.5"
+                  type="range">
+              </div>
+              <span class="details-constructor__text">10 м</span>
+            </div>
+          </div>
+          <div class="details-constructor__face-panel face-panel">
+            <h4 class="details-constructor__title">Лицевая панель</h4>
+
+            <div class="face-panel__box swiper">
+              <div class="face-panel__carousel swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide">
+                    <img src="images/sliders/face-panel/1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide">
+                    <img src="images/sliders/face-panel/1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide">
+                    <img src="images/sliders/face-panel/1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide">
+                    <img src="images/sliders/face-panel/1.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="details-constructor__functions functions">
+            <h4 class="details-constructor__title">дополнительные функции</h4>
+
+            <ul class="functions__list">
+              <li class="functions__item">
+                <label class="check">
+                  <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Защита от детей
+                </label>
+              </li>
+              <li class="functions__item">
+                <label class="check">
+                  <input class="check__input" type="checkbox" checked>
+                  <span class="check__box"></span>
+                  Wi-Fi
+                </label>
+              </li>
+              <li class="functions__item">
+                <label class="check">
+                  <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Защита от детей
+                </label>
+              </li>
+              <li class="functions__item">
+                <label class="check">
+                  <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Wi-Fi
+                </label>
+              </li>
+
+              <li class="functions__item">
+                <label class="check">
+                  <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Защита от детей
+                </label>
+              </li>
+              <li class="functions__item">
+                <label class="check">
+                  <input class="check__input" type="checkbox" checked>
+                  <span class="check__box"></span> Wi-Fi
+                </label>
+              </li>
+              <li class="functions__item">
+                <label class="check">
+                  <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Защита от детей
+                </label>
+              </li>
+              <li class="functions__item">
+                <label class="check">
+                  <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="constructor__bottom">
+        <div class="constructor__bottom-item">
+          <span class="details-constructor__title">Длина</span>
+          <p class="white length-output">6.5</p>
+        </div>
+        <div class="constructor__bottom-item">
+          <span class="details-constructor__title">лицевая панель</span>
+          <p class="circle"></p>
+        </div>
+        <div class="constructor__bottom-item">
+          <span class="details-constructor__title">стоимость</span>
+          <p class="yellow" id="total-price" data-target="0">0 <span>₽</span> </p>
+        </div>
+        <button class="btn btn--bg-anim">Оставить заявку</button>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <h2 class="footer__title section-title">связаться с нами</h2>
+    <div class="footer__wrapper">
+      <div class="footer__lists">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <span class="footer__label">WhatsApp</span>
+            <a href="tel:79113064144">+7911 306 4144</a>
+          </li>
+          <li class="footer__item">
+            <span class="footer__label">Телеграмм</span>
+            <a href="#">@elite_fire</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <span class="footer__label">Почта</span>
+            <a href="mailto:@elite_fire">info@elite-fire.ru</a>
+          </li>
+          <li class="footer__item">
+            <span class="footer__label">Наш адрес</span>
+            <address>Россия, г. Москва,
+              Варшавское шоссе, 170 г
+            </address>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__phone">
+        <span class="footer__label">Телефон</span>
+        <a href="tel:89113064144">8 911 306 4144</a>
+        <button class="btn btn--border" type="button">Связаться с менеджером</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-wrapper">
+        <a class="footer__logo" href="">
+          <img src="images/logo-no-text.svg" alt="">
+        </a>
+        <div class="footer__text">
+          2020-2021
+        </div>
+        <div class="footer__text">
+          ООО “МЕТАЛЛЭЛЕКТРОИНВЕСТ”
+        </div>
+        <div class="footer__text">
+          Пользовательское соглашение
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+
+  <!-- FancyBox -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!--  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"
+    integrity="sha512-ZKqmaRVpwWCw7S7mEjC89jDdWRD/oMS0mlfH96mO0u3wrPYoN+lXmqvyptH4P9mY6zkoPTSy5U2SwKVXRY5tYQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
