@@ -63,6 +63,7 @@ function construcror() {
 
   rangeSliderLength();
 }
+
 const rangeSliderForPrice = () => {
   const rangeSlider = document.querySelectorAll('.range-slider');
 
