@@ -144,3 +144,75 @@ rangeSliderForPrice();
 
 
 // updateCount();
+
+const showMenu = () => {
+  const menuBtn = document.querySelector('.menu__toggle');
+  const menu = document.querySelector('.menu__list');
+  const body = document.querySelector('body');
+  const overlay = document.querySelector('.overlay');
+  const links = document.querySelectorAll('.menu__link');
+
+  menuBtn.addEventListener('click', e => {
+    menu.classList.toggle('active');
+    menuBtn.classList.toggle('active');
+    overlay.classList.toggle('active');
+    body.classList.toggle('no-scroll');
+  });
+
+  overlay.addEventListener('click', e => {
+    menu.classList.remove('active');
+    menuBtn.classList.remove('active');
+    overlay.classList.remove('active');
+    body.classList.remove('no-scroll');
+  });
+  links.forEach(l => {
+    l.addEventListener('click', e => {
+      menu.classList.remove('active');
+      menuBtn.classList.remove('active');
+      overlay.classList.remove('active');
+      body.classList.remove('no-scroll');
+    });
+  })
+};
+showMenu();
+
+// const modals = () => {
+//   function bindModal(openBtn, modal, close, overlay = 'overaly') {
+//     const openBtnEl = document.querySelector(openBtn);
+//     const modalEl = document.querySelector(modal);
+//     const closeEl = document.querySelector(close);
+//     const overlayEl = document.querySelector(overlay);
+//     const body = document.querySelector('body');
+
+
+//     if (modalEl) {
+//       openBtnEl.addEventListener('click', e => {
+//         if (e.target) {
+//           e.preventDefault()
+//         }
+
+//         modalEl.classList.add('active');
+//         overlayEl.classList.add('active');
+//         body.classList.add('no-scroll');
+//       });
+
+//       closeEl.addEventListener('click', e => {
+//         modalEl.classList.remove('active');
+//         overlayEl.classList.remove('active');
+//         body.classList.remove('no-scroll');
+//       });
+
+//       modalEl.addEventListener('click', e => {
+//         if (e.target === modalEl) {
+//           modalEl.classList.remove('active');
+//           overlayEl.classList.remove('active');
+//           body.classList.remove('no-scroll');
+//         }
+//       })
+//     };
+//   };
+
+//   bindModal('.menu', '.menu__toggle', '.cart__close', '.overlay');
+
+// };
+// modals();

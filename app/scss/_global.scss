@@ -6,6 +6,9 @@ body {
   line-height: 16px;
   letter-spacing: 0.05em;
 
+  &.no-scroll {
+    overflow: hidden;
+  }
 
   // background-image: linear-gradient(to bottom, #000000, #0a0a0a, #121211, #181817, #1d1d1c);
   // 
@@ -30,26 +33,6 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
-  opacity: 0;
-  visibility: hidden;
-  backdrop-filter: blur(5px);
-  z-index: var(--z-9);
-  transition: 200ms ease-in;
-
-  &.active {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 550ms ease;
-  }
 }
 
 .section-title {
@@ -177,17 +160,18 @@ body {
     .btn__front {
       transform: rotateX(0deg) translateZ(25px);
       background-color: transparent;
-    }
-
-    .btn__back {
-      transform: rotateX(90deg) translateZ(25px);
       background-color: #ffcf7a;
       color: #1D1D1C;
     }
 
+    .btn__back {
+      transform: rotateX(-90deg) translateZ(25px);
+
+    }
+
     &:hover {
       .btn__front {
-        transform: rotateX(-90deg) translateZ(25px);
+        transform: rotateX(90deg) translateZ(25px);
       }
 
       .btn__back {
@@ -225,5 +209,27 @@ body {
   &__prev {
     background-image: url('../images/icons/chevron-left.svg');
     left: 0;
+  }
+}
+
+// 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(5px);
+  transition: 200ms ease-in;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 550ms ease;
   }
 }

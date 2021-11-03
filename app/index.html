@@ -29,25 +29,29 @@
 
 <body>
   <div class="wrapper">
+    <div class="overlay"></div>
     <header class="header">
   <div class="container">
     <nav class="header__menu menu">
-      <a class="header__logo" href="#">
-        <img src="images/logo.svg" alt="Лого">
+      <a class="logo" href="#">
+        <picture>
+          <source srcset="images/logo-mini.svg" media="(max-width: 991px)">
+          <img src="images/logo.svg" alt="Логоготип">
+        </picture>
       </a>
 
       <ul class="menu__list">
         <li class="menu__item">
-          <a class="menu__link" href="#">Продукция</a>
+          <a class="menu__link" href="#production">Продукция</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">Конструктор</a>
+          <a class="menu__link" href="#constructor">Конструктор</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">Опыт</a>
+          <a class="menu__link" href="#experience">Опыт</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">Контакты</a>
+          <a class="menu__link" href="#contacts">Контакты</a>
         </li>
       </ul>
 
@@ -56,6 +60,10 @@
           <use xlink:href="images/sprite.svg#phone-link"></use>
         </svg>
       </a>
+
+      <button class="menu__toggle" type="button" aria-label="Кнопка открытия меню">
+        <span class="menu__line"></span>
+      </button>
     </nav>
 
   </div>
@@ -161,7 +169,7 @@
     </div>
   </div>
 </section>
-      <div class="specifications">
+      <div class="specifications" id="production">
   <div class="container">
     <h2 class="visually-hidden">Характеристики</h2>
 
@@ -283,8 +291,10 @@
                   alt="Характеристика"></li>
             </ul>
             <div class="slider__arrows arrows">
-              <button class="arrows__next swiper-button-next" type="button" aria-label="Посмотреть следующий слайд"></button>
-              <button class="arrows__prev swiper-button-prev" type="button" aria-label="Посмотреть предыдущий слайд"></button>
+              <button class="arrows__next swiper-button-next" type="button"
+                aria-label="Посмотреть следующий слайд"></button>
+              <button class="arrows__prev swiper-button-prev" type="button"
+                aria-label="Посмотреть предыдущий слайд"></button>
             </div>
           </div>
         </div>
@@ -318,8 +328,10 @@
                   alt="Готовое решение"></li>
             </ul>
             <div class="slider__arrows arrows">
-              <button class="arrows__next swiper-button-next" type="button" aria-label="Посмотреть следующий слайд"></button>
-              <button class="arrows__prev swiper-button-prev" type="button" aria-label="Посмотреть предыдущий слайд"></button>
+              <button class="arrows__next swiper-button-next" type="button"
+                aria-label="Посмотреть следующий слайд"></button>
+              <button class="arrows__prev swiper-button-prev" type="button"
+                aria-label="Посмотреть предыдущий слайд"></button>
             </div>
           </div>
         </div>
@@ -360,7 +372,7 @@
     </div>
   </div>
 </div>
-      <section class="about">
+      <section class="about" id="experience">
   <div class="container">
     <div class="about__offer">
       <p class="about__text">Получите каталог с моделями и ценами на всю нашу продукцию</p>
@@ -420,8 +432,8 @@
           </div>
           <div class="about-box__back">
             <div class="content">
-              <h2>Lorem ipsum dolor sit amet.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quibusdam.</p>
+              <h2>Хз че написать.</h2>
+              <p>Тут тоже хз че написать.</p>
             </div>
           </div>
         </li>
@@ -455,7 +467,7 @@
     </div>
   </div>
 </section>
-      <section class="constructor">
+      <section class="constructor" id="constructor">
   <div class="container">
     <h2 class="constructor__title section-title">вы автор вашего камина</h2>
 
@@ -595,7 +607,7 @@
   </div>
 </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
   <div class="container">
     <h2 class="footer__title section-title">связаться с нами</h2>
     <div class="footer__wrapper">
@@ -633,8 +645,11 @@
   <div class="footer__bottom">
     <div class="container">
       <div class="footer__bottom-wrapper">
-        <a class="footer__logo" href="#">
-          <img src="images/logo-no-text.svg" alt="Логотип">
+        <a class="logo" href="#">
+          <picture>
+            <source srcset="images/logo-mini.svg" media="(max-width: 991px)">
+            <img src="images/logo.svg" alt="Логоготип">
+          </picture>
         </a>
         <div class="footer__text">
           2020-2021

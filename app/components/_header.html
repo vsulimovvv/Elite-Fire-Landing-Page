@@ -1,22 +1,25 @@
 <header class="header">
   <div class="container">
     <nav class="header__menu menu">
-      <a class="header__logo" href="#">
-        <img src="images/logo.svg" alt="Лого">
+      <a class="logo" href="#">
+        <picture>
+          <source srcset="images/logo-mini.svg" media="(max-width: 991px)">
+          <img src="images/logo.svg" alt="Логоготип">
+        </picture>
       </a>
 
       <ul class="menu__list">
         <li class="menu__item">
-          <a class="menu__link" href="#">Продукция</a>
+          <a class="menu__link" href="#production">Продукция</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">Конструктор</a>
+          <a class="menu__link" href="#constructor">Конструктор</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">Опыт</a>
+          <a class="menu__link" href="#experience">Опыт</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">Контакты</a>
+          <a class="menu__link" href="#contacts">Контакты</a>
         </li>
       </ul>
 
@@ -25,6 +28,10 @@
           <use xlink:href="images/sprite.svg#phone-link"></use>
         </svg>
       </a>
+
+      <button class="menu__toggle" type="button" aria-label="Кнопка открытия меню">
+        <span class="menu__line"></span>
+      </button>
     </nav>
 
   </div>

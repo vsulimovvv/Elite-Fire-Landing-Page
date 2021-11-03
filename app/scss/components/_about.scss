@@ -167,9 +167,7 @@
     }
   }
 }
-
-
-
+// ! Потом чутка модернизировать
 .about-box__item--flip {
 
   .about-box__front,
@@ -177,7 +175,9 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+   
     backface-visibility: hidden;
+    
     position: absolute;
     transition: 700ms;
   }
@@ -185,6 +185,8 @@
   .about-box__front {
     img {
       height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
 
     transform: perspective(1600px) rotateY(0deg);
