@@ -10,7 +10,7 @@
     margin-bottom: 60px;
 
     @include breakpointsMaxW($bp-991) {
-      grid-template-columns: minmax(auto, 450px) minmax(auto, 1fr);
+      grid-template-columns: minmax(auto, 400px) minmax(auto, 1fr);
       gap: 30px;
     }
 
@@ -25,7 +25,7 @@
   }
 
   &__preview {
-    width: 100%;
+    max-width: 100%;
     height: 374px;
 
     @include breakpointsMaxW($bp-container) {
@@ -219,7 +219,6 @@
 
   .swiper-wrapper {
     min-width: 0;
-    width: 90%;
     height: 77px;
   }
 
@@ -274,7 +273,7 @@
     user-select: none;
 
     .slide {
-      width: calc(100% - 80px);
+      max-width: calc(100% - 80px);
 
       img {
         width: 100%;
@@ -300,19 +299,33 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 29px;
+
+    @include breakpointsMaxW($bp-420) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
-    width: 217px;
+    max-width: 217px;
+    width: 100%;
     font-weight: 500;
     font-size: 14px;
     line-height: 30px;
     letter-spacing: -0.01px;
 
+    // &:nth-child(2n+1) {
+    //   margin-right: 30px;
+    // }
+
     .check {
       width: 100%;
       display: flex;
       justify-content: space-between;
+
+      &__box {
+        margin-left: 9px;
+      }
     }
   }
 }

@@ -1,12 +1,8 @@
-.specifications {
+.production {
   padding-top: 10px;
   color: var(--color-white);
   background-image: linear-gradient(to bottom, #1e1e1d, #1d1d1c, #1d1d1c, #1c1c1b, #1c1c1b);
   margin-top: -1px;
-
-  &__col-top {
-    margin-bottom: 37px;
-  }
 
   &__top,
   &__bottom {
@@ -37,7 +33,7 @@
     position: relative;
     max-width: 570px;
 
-    .specifications__line {
+    .production__line {
       position: absolute;
       content: '';
       top: -18px;
@@ -61,15 +57,15 @@
 
   &__box {
     &--fuel-block {
-      .specifications__text {}
+      .production__text {}
     }
 
     &--decisions {
-      .specifications__text {}
+      .production__text {}
     }
 
     &--accessories {
-      .specifications__text {}
+      .production__text {}
     }
 
   }
@@ -107,5 +103,13 @@
       padding-bottom: 25px;
     }
   }
-}
 
+  &__slider {
+    margin-left: 0;
+    height: calc(270px + (346 - 270) * ((100vw - 375px) / (1225 - 375)));
+
+    @include breakpointsMinW($bp-container) {
+      height: 346px;
+    }
+  }
+}
