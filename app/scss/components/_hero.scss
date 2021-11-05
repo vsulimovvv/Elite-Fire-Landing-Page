@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 98px;
+  padding-top: 85px;
   padding-bottom: 242px;
   margin-top: -1px;
   background-image: linear-gradient(to bottom, #1e1e1d, #1e1e1d, #1f1f1d, #1f1f1e, #201f1e);
@@ -21,7 +21,6 @@
     @include breakpointsMaxW($bp-768) {
       padding-top: calc(250px + (370 - 250) * ((100vw - 320px) / (1225 - 320)));
       background-position: top center;
-
     }
   }
 
@@ -30,7 +29,7 @@
     text-transform: uppercase;
     max-width: 780px;
     margin-bottom: 30px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
 
     @include text-gradient();
 
@@ -63,6 +62,10 @@
     span {
       font-size: 40px;
       font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1225 - 320)));
+
+      @include breakpointsMinW($bp-container) {
+        font-size: 40px;
+      }
     }
   }
 
