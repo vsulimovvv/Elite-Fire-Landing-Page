@@ -31,36 +31,11 @@ function construcror() {
     fill.style.width = rangeSlider.value * 10 + '%'
   }
   setFilBg();
-  
+
   totalPriceEl.textContent = rangeSlider.value * 10000;
-  //    
-  // function updateCount() {
-  //   const totalPrice = document.querySelector('#total-price');
-  //   let speed = 500;
 
-  //   let target = +rangeSlider.value * 10900;
-  //   let count = parseInt(totalPrice.textContent);
-  //   console.log('targetValue', target);
-  //   console.log('count', count);
-
-  //   const inc = target / speed;
-
-  //   if (count < target) {
-  //     // speed = 1500;
-  //     totalPrice.textContent = `${Math.ceil(count + inc)} ₽`;
-  //     console.log(totalPrice)
-  //     setTimeout(updateCount, 1);
-  //   } else {
-  //     count.textContent = `${+target}`;
-  //   }
-  // }
-
-  // updateCount()
   construcrorEl.addEventListener('input', e => {
     setFilBg();
-    // 
-    // updateCount()
-    // 
     let currentValue = e.target.value;
     let priceFromRange = 10000;
 
@@ -73,12 +48,6 @@ function construcror() {
     totalPriceEl.textContent = price;
   });
 }
-
-
-
-
-// 
-
 
 const showMenu = () => {
   const menuBtn = document.querySelector('.menu__toggle');
@@ -109,4 +78,15 @@ const showMenu = () => {
     });
   })
 };
-// showMenu();
+showMenu();
+
+//* Show scroll top
+function scrollTop() {
+  const scrollTopEl = document.getElementById('scroll-top');
+  if (this.scrollY >= 560) {
+    scrollTopEl.classList.add('show-scroll');
+  } else {
+    scrollTopEl.classList.remove('show-scroll');
+  }
+}
+window.addEventListener('scroll', scrollTop);

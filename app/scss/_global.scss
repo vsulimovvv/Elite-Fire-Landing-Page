@@ -5,14 +5,11 @@ body {
   font-size: 13px;
   line-height: 16px;
   letter-spacing: 0.05em;
+  overflow-x: hidden;
 
   &.no-scroll {
     overflow: hidden;
   }
-
-  // background-image: linear-gradient(to bottom, #000000, #0a0a0a, #121211, #181817, #1d1d1c);
-  // 
-  overflow-x: hidden;
 }
 
 .container {
@@ -136,7 +133,7 @@ body {
     color: #ffcf7a;
     border: 1px solid transparent;
     transition: 300ms ease;
-    width: 200px;
+    width: 280px;
     height: 60px;
 
     &:active {
@@ -239,5 +236,42 @@ body {
 .logo {
   &:hover {
     animation: wobble-bottom 600ms ease;
+  }
+}
+
+
+// Scroll Top
+.scroll {
+  position: fixed;
+  right: 16px;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 8px;
+  border-radius: 8px;
+  transition: 400ms;
+  background-color: var(--color-accent);
+  z-index: 100;
+  opacity: 0.3;
+  visibility: hidden;
+
+  svg {
+    transform: rotate(-90deg);
+    width: 30px;
+    height: 30px;
+
+    path {
+      fill: var(--color-unaccent);
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.show-scroll {
+    visibility: visible;
+    bottom: 25px;
   }
 }

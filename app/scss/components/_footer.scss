@@ -1,8 +1,14 @@
 .footer {
-  padding-top: 72px;
+  padding-top: 65px;
   margin-top: -1px;
   padding-bottom: 18px;
   background-color: #121212;
+
+  &__logo {
+    margin-right: 30px;
+    transform: scale(0.95, 0.98);
+    width: 97px;
+  }
 
   &__title {
     margin-bottom: 70px;

@@ -11,7 +11,7 @@
   &__wrapper {
     background-image: url('../images/content/hero-bg.png');
     background-repeat: no-repeat;
-    background-size: calc(300px + (700 - 300) * ((100vw - 320px) / (1225 - 320)));
+    background-size: calc(280px + (700 - 280) * ((100vw - 320px) / (1225 - 320)));
     background-position: right center;
 
     @include breakpointsMinW($bp-991) {
@@ -19,7 +19,7 @@
     }
 
     @include breakpointsMaxW($bp-768) {
-      padding-top: calc(250px + (370 - 250) * ((100vw - 320px) / (1225 - 320)));
+      padding-top: calc(200px + (450 - 200) * ((100vw - 320px) / (1225 - 320)));
       background-position: top center;
     }
   }

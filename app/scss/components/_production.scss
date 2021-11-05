@@ -2,7 +2,7 @@
   padding-top: 10px;
   color: var(--color-white);
   background-image: linear-gradient(to bottom, #1e1e1d, #1d1d1c, #1d1d1c, #1c1c1b, #1c1c1b);
-  margin-top: -1px;
+  margin-top: -2px;
 
   &__top,
   &__bottom {
@@ -14,6 +14,10 @@
     @include breakpointsMaxW($bp-991) {
       grid-template-columns: 1fr;
     }
+  }
+
+  &__top {
+    margin-bottom: 27px;
   }
 
   &__title {
@@ -57,7 +61,27 @@
 
   &__box {
     &--fuel-block {
-      .production__text {}
+      padding-top: 40px;
+
+      .production__text {
+        margin-bottom: 5px;
+      }
+
+      .production__name-list {
+        margin-bottom: 23px;
+      }
+
+      .production__lists {
+        display: grid;
+        grid-template-columns: minmax(auto, 190px) minmax(auto, 330px);
+        gap: 50px;
+      }
+    }
+
+    &--sizes {
+      .production__title {
+        margin-bottom: 28px;
+      }
     }
 
     &--decisions {
@@ -67,11 +91,10 @@
     &--accessories {
       .production__text {}
     }
-
   }
 
   &__shedule {
-    margin-bottom: 60px;
+    margin-bottom: 78px;
   }
 
   &__name-list {
@@ -79,18 +102,20 @@
     font-size: 18px;
     line-height: 27px;
     color: var(--color-unaccent);
-    margin-bottom: 40px;
+    margin-bottom: 17px;
     letter-spacing: -0.1px;
   }
 
   &__lists {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 200px);
+    gap: 50px;
   }
 
   &__item {
     font-size: 14px;
     line-height: 27px;
+
   }
 
   &__text {

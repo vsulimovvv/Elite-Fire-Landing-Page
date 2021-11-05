@@ -1,39 +1,26 @@
 .smart {
-  background-image: url('../images/content/smart.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: -1px;
-
+  margin-top: -2px;
   background-color: #1E1E1D;
-
-  background-size: calc(500px + (1300 - 500) * ((100vw - 320px) / (1225 - 320)));
-  padding-bottom: calc(200px + (600 - 200) * ((100vw - 320px) / (1225 - 320)));
   position: relative;
+  padding-bottom: 123px;
 
-  @include breakpointsMinW($bp-container) {
-    background-size: 1306px;
-    padding-bottom: 590px;
-  }
+  // &::after {
+  //   position: absolute;
+  //   content: '';
+  //   background-image: url('../images/decor/smart-1.png');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: center;
+  //   // background-attachment: fixed;
+  //   max-width: 100%;
+  //   width: 100%;
+  //   height: 970px;
+  //   top: 0;
+  //   left: 0;
 
-  // background-color: #1d1d1c;
-
-  &::after {
-    position: absolute;
-    content: '';
-    background-image: url('../images/decor/smart-1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    // background-attachment: fixed;
-    max-width: 100%;
-    width: 100%;
-    height: 970px;
-    top: 0;
-    left: 0;
-
-    opacity: 0;
-    visibility: hidden;
-  }
+  //   opacity: 0;
+  //   visibility: hidden;
+  // }
 
   &__title {
     max-width: calc(400px + (790 - 400) * ((100vw - 320px) / (1225 - 320)));
@@ -87,20 +74,60 @@
     color: var(--color-white);
   }
 
+  &__preview {
+    // height: calc(200px + (600 - 200) * ((100vw - 320px) / (1225 - 320)));
+    background-image: url('../images/content/smart.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    position: relative;
+
+    height: 430px;
+
+    @include breakpointsMinW($bp-container) {
+      // height: 430px;
+    }
+  }
+
   &__text {
     position: absolute;
     font-weight: 500;
     font-size: 14px;
     line-height: 33px;
-    top: 57%;
     color: #464239;
+    top: 61%;
+
+    @include breakpointsMaxW($bp-991) {
+      top: 57%;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      top: 55%;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      top: 52.5%;
+    }
+
+    @include breakpointsMaxW($bp-420) {
+      top: 50.5%;
+    }
 
     &--yandex {
-      left: 20%;
+      left: 16%;
+
+      @include breakpointsMaxW($bp-420) {
+        left: 6.5%;
+      }
+
     }
 
     &--xiaomi {
-      right: 16.5%;
+      right: 13.5%;
+
+      @include breakpointsMaxW($bp-420) {
+        right: 5.5%;
+      }
     }
   }
 }

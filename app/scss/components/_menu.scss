@@ -50,12 +50,19 @@
     text-transform: uppercase;
     transition: color 150ms ease;
     letter-spacing: 0.05em;
+    transition: 250ms ease;
 
     &:hover {
       color: var(--color-accent);
+    }
 
-      @include breakpointsMaxW($bp-991) {
-        // color: #1d1d1d;
+    @include breakpointsMaxW($bp-991) {
+      font-size: 20px;
+      padding: 10px;
+
+      &:hover {
+        background-color: var(--color-accent);
+        color: var(--color-black);
       }
     }
   }
