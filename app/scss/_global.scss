@@ -255,6 +255,7 @@ body {
   z-index: 100;
   opacity: 0.3;
   visibility: hidden;
+  z-index: 999;
 
   svg {
     transform: rotate(-90deg);
