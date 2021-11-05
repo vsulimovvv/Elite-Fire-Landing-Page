@@ -261,10 +261,7 @@ body {
     transform: rotate(-90deg);
     width: 30px;
     height: 30px;
-
-    path {
-      fill: var(--color-unaccent);
-    }
+    fill: var(--color-unaccent);
   }
 
   &:hover {
