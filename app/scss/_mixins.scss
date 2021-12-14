@@ -27,3 +27,7 @@
 @mixin wobble-animation {
   animation: wobble-bottom 600ms ease;
 }
+
+@mixin maskImage($image, $size) {
+  mask: $image no-repeat center/$size;
+}

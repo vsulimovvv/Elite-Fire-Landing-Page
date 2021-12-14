@@ -112,6 +112,12 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+input,
+a,
+button,
+textarea {
+  outline: transparent;
+}
 
 // ! Для прибития футера к низу
 
