@@ -21,12 +21,7 @@
 </head>
 
 <body>
-  <!--* Scroll Top -->
-  <a class="scroll" href="#" id="scroll-top">
-    <svg>
-      <use xlink:href="images/sprite.svg#arrow"></use>
-    </svg>
-  </a>
+  @include('./components/_scroll-top.html')
 
   <div class="wrapper">
     <div class="overlay"></div>
@@ -37,7 +32,7 @@
       @include('./components/_refueling.html')
       @include('./components/_smart.html')
       @include('./components/_specifications.html')
-      @include('./components/_about.html')
+      @include('./components/_experience.html')
       @include('./components/_constructor.html')
     </main>
     @include('./components/_footer.html')

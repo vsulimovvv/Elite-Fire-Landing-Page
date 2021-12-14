@@ -21,26 +21,26 @@
 </head>
 
 <body>
-  <!--* Scroll Top -->
-  <a class="scroll" href="#" id="scroll-top">
-    <svg>
-      <use xlink:href="images/sprite.svg#arrow"></use>
-    </svg>
-  </a>
+   <!--* Scroll Top -->
+ <a class="scroll" href="#" id="scroll-top">
+   <svg>
+     <use xlink:href="images/sprite.svg#arrow"></use>
+   </svg>
+ </a>
 
   <div class="wrapper">
     <div class="overlay"></div>
     <header class="header">
   <div class="container">
     <nav class="header__menu menu">
-      <a class="logo" href="#">
+      <a class="logo" href="#" data-aos="fade-right">
         <picture>
           <source srcset="images/logo-mini.svg" media="(max-width: 991px)">
           <img src="images/logo.svg" alt="Логоготип">
         </picture>
       </a>
 
-      <ul class="menu__list">
+      <ul class="menu__list" data-aos="fade-left">
         <li class="menu__item">
           <a class="menu__link" href="#production">Продукция</a>
         </li>
@@ -55,7 +55,7 @@
         </li>
       </ul>
 
-      <a class="menu__phone" aria-label="Позвоните нам" href="tel:999999999">
+      <a class="menu__phone" aria-label="Позвоните нам" href="tel:999999999" data-aos="fade-left">
         <svg>
           <use xlink:href="images/sprite.svg#phone-link"></use>
         </svg>
@@ -71,7 +71,7 @@
     <main class="main">
       <section class="hero">
   <div class="container">
-    <div class="hero__wrapper">
+    <div class="hero__wrapper" data-aos="zoom-out">
       <div class="hero__offer">
         <h1 class="hero__title">Автоматические
           биокамины
@@ -91,26 +91,26 @@
 </section>
       <section class="advantages">
   <div class="container">
-    <h2 class="advantages__title section-title">Настоящий высокий огонь у вас дома</h2>
-    <div class="advantages__descr">
+    <h2 class="advantages__title section-title" data-aos="fade-right">Настоящий высокий огонь у вас дома</h2>
+    <div class="advantages__descr" data-aos="fade-right">
       <p>Благодаря специальной технологии горения биоэтанола
         мы добились горения потрясающей красоты</p>
     </div>
-    <div class="advantages__preview"></div>
+    <div class="advantages__preview" data-aos="fade-up"></div>
     <ul class="advantages__items">
-      <li class="advantages__item advantages__item--flame">
+      <li class="advantages__item advantages__item--flame" data-aos="fade-up" data-aos-delay="50">
         <p class="">
           Пламя яркое, высотой
           до 20 сантиметров
         </p>
       </li>
-      <li class="advantages__item advantages__item--biofuel">
+      <li class="advantages__item advantages__item--biofuel" data-aos="fade-up" data-aos-delay="150">
         <p class="">
           Работает такой камин
           на биотопливе          
         </p>
       </li>
-      <li class="advantages__item advantages__item--smoke">
+      <li class="advantages__item advantages__item--smoke" data-aos="fade-up" data-aos-delay="250">
         <p class="">
           Он не дымит и не пахнет
         </p>
@@ -121,23 +121,23 @@
       <section class="refueling">
   <div class="container">
     <div class="refueling__wrapper">
-      <h2 class="refueling__title section-title">заправка</h2>
-      <div class="refueling__text">
+      <h2 class="refueling__title section-title" data-aos="fade-down">заправка</h2>
+      <div class="refueling__text" data-aos="fade-right" data-aos-delay="100">
         <p>Внутри не просто труба. Спроектированный нами бак, самого большого обьема среди всех производителей
         </p>
         <p> В наши топливные блоки встроен
           мощный насос.</p>
       </div>
-      <div class="refueling__feature feature">
-        <div class="feature__bold">
+      <div class="refueling__feature feature" data-aos="fade-left" data-aos-delay="100">
+        <div class="feature__bold" data-aos="zoom-in" data-aos-delay="200">
           <p>3,5 <span>минуты</span></p>
         </div>
-        <div class="feature__normal">
+        <div class="feature__normal" data-aos="zoom-in" data-aos-delay="200">
           <span>и бак наполнен
             на 100%</span>
         </div>
       </div>
-      <div class="refueling__bottom">
+      <div class="refueling__bottom" data-aos="fade-up" data-aos-delay="100">
         <div class="refueling__actions">
           <div class="refueling__action refueling__action--house"></div>
           <div class="refueling__action refueling__action--power-button"></div>
@@ -146,9 +146,9 @@
           Нажать кнопку</p>
       </div>
 
-      <div class="circle-blur"></div>
-      <div class="circle circle--small"></div>
-      <div class="circle circle--big"></div>
+      <div class="circle-blur" data-aos="zoom-in"></div>
+      <div class="circle circle--small" data-aos="zoom-in" data-aos-delay="100"></div>
+      <div class="circle circle--big" data-aos="zoom-in" data-aos-delay="100"></div>
     </div>
   </div>
 </section>
@@ -156,18 +156,19 @@
   <div class="container">
     <div class="smart__wrapper">
 
-      <h2 class="smart__title section-title">
+      <h2 class="smart__title section-title" data-aos="fade-down">
         <span>Умный камин</span>
         <span>очень умный</span>
       </h2>
-      <div class="smart__descr">
+      <div class="smart__descr" data-aos="fade-down">
         <p>Даже если у Вас нет своего решения по умному дому. Мы отлично ладим с Яндекс.Алиса и Mi Home.</p>
       </div>
-      <div class="smart__preview">
-        <div class="smart__text smart__text--yandex">Яндекс.Алиса
+      <div class="smart__preview" data-aos="fade-up">
+        <div class="smart__text smart__text--yandex" data-aos="zoom-in-up" data-aos-delay="300">
+          Яндекс.Алиса
           <span class="smart__drop">Отлично смотрится с Яндекс.Алиса</span>
         </div>
-        <div class="smart__text smart__text--xiaomi">Mi Home Xiaomi
+        <div class="smart__text smart__text--xiaomi" data-aos="zoom-in-up" data-aos-delay="300">Mi Home Xiaomi
           <span class="smart__drop">Отлично смотрится с Mi Home Xiaomi</span>
         </div>
       </div>
@@ -179,7 +180,7 @@
     <h2 class="visually-hidden">Характеристики</h2>
 
     <div class="production__top">
-      <div class="production__col">
+      <div class="production__col" data-aos="fade-right">
 
         <div class="production__box production__box--fuel-block">
           <h3 class="production__title">Топливный блок</h3>
@@ -263,7 +264,7 @@
         </div>
       </div>
 
-      <div class="production__col">
+      <div class="production__col" data-aos="fade-left">
         <div class="production__box--sizes">
           <h3 class="production__title">Очаги для встраивания в нишу
             <br> по Вашим размерам</h3>
@@ -305,11 +306,9 @@
       </div>
     </div>
 
-    <div class="production__bottom">
-
+    <div class="production__bottom" data-aos="fade-up"  data-aos-delay="100">
       <div class="specification__col">
         <div class="production__box production__box--decisions">
-
           <h3 class="production__title">Готовые решения</h3>
           <div class="production__text">
             <p>Напольные отдельно стоящие камины.</p>
@@ -379,8 +378,8 @@
       <section class="experience" id="experience">
   <div class="container">
     <div class="experience__offer">
-      <p class="experience__text">Получите каталог с моделями и ценами на всю нашу продукцию</p>
-      <button class="btn btn--flip" type="button">
+      <p class="experience__text" data-aos="fade-up"  data-aos-delay="100">Получите каталог с моделями и ценами на всю нашу продукцию</p>
+      <button class="btn btn--flip" type="button" data-aos="fade-up"  data-aos-delay="100">
         <span class="btn__front">Получить каталог!</span>
         <span class="btn__back">Открыть каталог!</span>
       </button>
@@ -389,7 +388,7 @@
     <div class="experience__box experience-box">
       <h2 class="experience-box__title section-title">Есть задача? Есть решение!</h2>
       <ul class="experience-box__list">
-        <li class="experience-box__item">
+        <li class="experience-box__item" data-aos="fade-up" data-aos-delay="50">
           <div class="experience-box__img">
             <div class="experience-box__img">
               <img src="images/content/10.jpg" alt="Проект №1">
@@ -399,7 +398,7 @@
             <p class="experience-box__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
         </li>
-        <li class="experience-box__item">
+        <li class="experience-box__item" data-aos="fade-up" data-aos-delay="150">
           <div class="experience-box__img">
             <img src="images/content/8.jpg" alt="Проект №2">
           </div>
@@ -407,7 +406,7 @@
             <p class="experience-box__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
         </li>
-        <li class="experience-box__item">
+        <li class="experience-box__item" data-aos="fade-up" data-aos-delay="250">
           <div class="experience-box__img">
             <img src="images/content/9.jpg" alt="Проект №3">
           </div>
@@ -422,7 +421,7 @@
       <h2 class="experience-box__title section-title">Почемы мы можем многое? <br>
         Свои люди. Свои станки. Своя лаборатория</h2>
       <ul class="experience-box__list">
-        <li class="experience-box__item experience-box__item--flip">
+        <li class="experience-box__item experience-box__item--flip" data-aos="fade-up" data-aos-delay="50">
           <div class="experience-box__front">
             <img src="images/content/5.jpg" alt="Проект №1">
           </div>
@@ -433,7 +432,7 @@
             </div>
           </div>
         </li>
-        <li class="experience-box__item experience-box__item--flip">
+        <li class="experience-box__item experience-box__item--flip" data-aos="fade-up" data-aos-delay="150">
           <div class="experience-box__front">
             <img src="images/content/6.jpg" alt="Проект №2">
           </div>
@@ -444,7 +443,7 @@
             </div>
           </div>
         </li>
-        <li class="experience-box__item experience-box__item--flip">
+        <li class="experience-box__item experience-box__item--flip" data-aos="fade-up" data-aos-delay="250">
           <div class="experience-box__front">
             <img src="images/content/7.jpg" alt="Проект №3">
           </div>
@@ -465,10 +464,10 @@
 
     <div class="constructor__wrapper">
       <div class="constructor__top">
-        <div class="constructor__preview">
+        <div class="constructor__preview" data-aos="fade-right">
           <img src="images/content/constructor.jpg" alt="Камин">
         </div>
-        <div class="constructor__details details-constructor">
+        <div class="constructor__details details-constructor" data-aos="fade-left">
           <div class="details-constructor length">
             <h4 class="details-constructor__title">Выберите длину</h4>
 
@@ -576,7 +575,7 @@
 
       </div>
 
-      <div class="constructor__bottom">
+      <div class="constructor__bottom" data-aos="fade-up" data-aos-delay="100">
         <div class="constructor__bottom-item">
           <span class="details-constructor__title">Длина</span>
           <p class="white length-output">6.5</p>
@@ -601,9 +600,9 @@
     </main>
     <footer class="footer" id="contacts">
   <div class="container">
-    <h2 class="footer__title section-title">связаться с нами</h2>
+    <h2 class="footer__title section-title" data-aos="fade-up">связаться с нами</h2>
     <div class="footer__wrapper">
-      <div class="footer__lists">
+      <div class="footer__lists" data-aos="fade-right" data-aos-delay="100">
         <ul class="footer__list">
           <li class="footer__item">
             <span class="footer__label">WhatsApp</span>
@@ -627,7 +626,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__phone">
+      <div class="footer__phone" data-aos="fade-left" data-aos-delay="100">
         <span class="footer__label">Телефон</span>
         <a href="tel:89113064144">8 911 306 4144</a>
         <button class="btn btn--border" type="button">Связаться с менеджером</button>

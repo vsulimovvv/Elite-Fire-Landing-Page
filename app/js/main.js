@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
   AOS.init();
-// * ==== Show Menu
+  // * ==== Show Menu
   (function showMenu() {
     const menuBtn = document.querySelector('.menu__toggle');
     const menu = document.querySelector('.menu__list');
