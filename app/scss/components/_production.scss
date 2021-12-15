@@ -11,6 +11,10 @@
 
     gap: 85px;
 
+    @include breakpointsMaxW($bp-container) {
+      gap: calc(30px + (85 - 30) * ((100vw - 320px) / (1225 - 320)));
+    }
+
     @include breakpointsMaxW($bp-991) {
       grid-template-columns: 1fr;
     }
@@ -36,6 +40,12 @@
     margin-bottom: 25px;
     position: relative;
     max-width: 570px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
 
     .production__line {
       position: absolute;

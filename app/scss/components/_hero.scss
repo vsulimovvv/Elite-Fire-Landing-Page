@@ -4,12 +4,15 @@
   margin-top: -1px;
   background: linear-gradient(to bottom, #1e1e1d, #1e1e1d, #1f1f1d, #1f1f1e, #201f1e);
 
+  @include breakpointsMaxW($bp-container) {
+    padding-bottom: calc(100px + (242 - 100) * ((100vw - 320px) / (1225 - 320)));
+  }
+
   @include breakpointsMaxW($bp-991) {
     padding-top: calc(30px + (98 - 30) * ((100vw - 320px) / (1225 - 320)));
   }
 
-  &__wrapper {
-    background-image: url('../images/content/hero-bg.png');
+  &__wrapper {   
     background-repeat: no-repeat;
     background-size: calc(280px + (700 - 280) * ((100vw - 320px) / (1225 - 320)));
     background-position: right center;

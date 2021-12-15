@@ -1,9 +1,7 @@
 .check {
   position: relative;
   cursor: pointer;
-  // padding-left: 36px;
   padding-right: 30px;
-  // display: flex;align-items: center;
   color: var(--color-white);
   font-weight: 500;
   font-size: 14px;
@@ -21,7 +19,7 @@
     top: 50%;
     transform: translateY(-50%);
     border: 1px solid var(--color-accent);
-     right: 0;
+    right: 0;
     border-radius: 2px;
   }
 
@@ -29,21 +27,5 @@
     background-image: url('../images/icons/plus.svg');
     background-size: 20px;
     background-position: center;
-  }
-
-  // &__input:focus+&__box {
-  //   background-image: url('../images/icons/checkbox-off-focused.svg');
-  // }
-
-  // &__input:checked:focus+&__box {
-  //   background-image: url('../images/icons/checkbox-on.svg');
-  // }
-
-  &__input:hover+&__box {
-    // background-image: url('../images/icons/checkbox-off-focused.svg');
-  }
-
-  &__input:checked:hover+&__box {
-    // background-image: url('../images/icons/checkbox-on.svg');
   }
 }

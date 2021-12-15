@@ -4,23 +4,9 @@
   position: relative;
   padding-bottom: 123px;
 
-  // &::after {
-  //   position: absolute;
-  //   content: '';
-  //   background-image: url('../images/decor/smart-1.png');
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   background-position: center;
-  //   // background-attachment: fixed;
-  //   max-width: 100%;
-  //   width: 100%;
-  //   height: 970px;
-  //   top: 0;
-  //   left: 0;
-
-  //   opacity: 0;
-  //   visibility: hidden;
-  // }
+  @include breakpointsMaxW($bp-container) {
+    padding-bottom: calc(40px + (123 - 40) * ((100vw - 320px) / (1225 - 320)));
+  }
 
   &__title {
     max-width: calc(400px + (790 - 400) * ((100vw - 320px) / (1225 - 320)));
@@ -55,12 +41,6 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
-
-    // p {
-    //   &:not(:last-child) {
-    //     margin-right: 128px;
-    //   }
-    // }
   }
 
   &__descr {
@@ -75,13 +55,16 @@
   }
 
   &__preview {
-    background-image: url('../images/content/smart.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 110%;
     position: relative;
 
     height: 430px;
+
+    @include breakpointsMaxW($bp-container) {
+      height: calc(200px + (430 - 200) * ((100vw - 320px) / (1225 - 320)));
+    }
   }
 
   &__text {

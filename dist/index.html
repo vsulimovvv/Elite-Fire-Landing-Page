@@ -13,22 +13,59 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
   <!-- Style -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <!--* Scroll Top -->
-  <a class="scroll" href="#" id="scroll-top">
-    <svg>
-      <use xlink:href="images/sprite.svg#arrow"></use>
-    </svg>
-  </a>
+   <!--* Scroll Top -->
+ <a class="scroll" href="#" id="scroll-top">
+   <svg>
+     <use xlink:href="images/sprite.svg#arrow"></use>
+   </svg>
+ </a>
 
   <div class="wrapper">
+    <div class="popup popup--back-call">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть попап"></button>
+    <h2 class="popup__title">Обратный звонок:</h2>
+    <form class="form">
+      <div class="form__group">
+        <label class="form__label" for="name">Ваше имя:</label>
+        <input class="form__input" type="text" id="name" name="name" required>
+      </div>
+      <div class="form__group">
+        <label class="form__label" for="tel-back-call">Ваш номер:</label>
+        <input class="form__input" type="tel" id="tel-back-call" name="tel" required>
+      </div>
+
+      <button class="form__submit" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+<div class="popup popup--request">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть попап"></button>
+    <h2 class="popup__title">Оставить заявку:</h2>
+    <form class="form">
+      <div class="form__group">
+        <label class="form__label" for="name">Ваше имя:</label>
+        <input class="form__input" type="text" id="name" name="name" required>
+      </div>
+      <div class="form__group">
+        <label class="form__label" for="tel-back-call">Ваш номер:</label>
+        <input class="form__input" type="tel" id="tel-back-call" name="tel" required>
+      </div>
+      <div class="form__group">
+        <label class="form__label" for="message">Сообщение:</label>
+        <textarea class="form__input form__input--textarea" name="message" id="message" required></textarea>
+      </div>
+
+      <button class="form__submit" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
     <div class="overlay"></div>
     <header class="header">
   <div class="container">
@@ -71,7 +108,7 @@
     <main class="main">
       <section class="hero">
   <div class="container">
-    <div class="hero__wrapper">
+    <div class="hero__wrapper" style=" background-image: url('../images/content/hero-bg.png');">
       <div class="hero__offer">
         <h1 class="hero__title">Автоматические
           биокамины
@@ -96,7 +133,7 @@
       <p>Благодаря специальной технологии горения биоэтанола
         мы добились горения потрясающей красоты</p>
     </div>
-    <div class="advantages__preview"></div>
+    <div class="advantages__preview" style="background-image: url('../images/content/advantages.png');"></div>
     <ul class="advantages__items">
       <li class="advantages__item advantages__item--flame">
         <p class="">
@@ -107,7 +144,7 @@
       <li class="advantages__item advantages__item--biofuel">
         <p class="">
           Работает такой камин
-          на биотопливе          
+          на биотопливе
         </p>
       </li>
       <li class="advantages__item advantages__item--smoke">
@@ -120,7 +157,7 @@
 </section>
       <section class="refueling">
   <div class="container">
-    <div class="refueling__wrapper">
+    <div class="refueling__wrapper" style="background-image: url('../images/content/refueling-2.png');">
       <h2 class="refueling__title section-title">заправка</h2>
       <div class="refueling__text">
         <p>Внутри не просто труба. Спроектированный нами бак, самого большого обьема среди всех производителей
@@ -146,7 +183,7 @@
           Нажать кнопку</p>
       </div>
 
-      <div class="circle-blur"></div>
+      <div class="circle-blur" style="background-image: url('../images/decor/refueling-blur.png');"></div>
       <div class="circle circle--small"></div>
       <div class="circle circle--big"></div>
     </div>
@@ -155,7 +192,6 @@
       <section class="smart">
   <div class="container">
     <div class="smart__wrapper">
-
       <h2 class="smart__title section-title">
         <span>Умный камин</span>
         <span>очень умный</span>
@@ -163,8 +199,9 @@
       <div class="smart__descr">
         <p>Даже если у Вас нет своего решения по умному дому. Мы отлично ладим с Яндекс.Алиса и Mi Home.</p>
       </div>
-      <div class="smart__preview">
-        <div class="smart__text smart__text--yandex">Яндекс.Алиса
+      <div class="smart__preview" style="background-image: url('../images/content/smart.jpg');">
+        <div class="smart__text smart__text--yandex">
+          Яндекс.Алиса
           <span class="smart__drop">Отлично смотрится с Яндекс.Алиса</span>
         </div>
         <div class="smart__text smart__text--xiaomi">Mi Home Xiaomi
@@ -189,7 +226,7 @@
 
           <div class="production__img">
             <div class="production__line"></div>
-            <img src="images/content/spec-1.png" alt="Особенные характеристики">
+            <img src="images/content/spec-1.png" alt="Особенные характеристики" width="570" height="170">
           </div>
 
           <span class="production__name-list">Варианты отделки</span>
@@ -263,7 +300,7 @@
         </div>
       </div>
 
-      <div class="production__col">
+      <div class="production__col production__col--right">
         <div class="production__box--sizes">
           <h3 class="production__title">Очаги для встраивания в нишу
             <br> по Вашим размерам</h3>
@@ -282,18 +319,19 @@
           <div class="production__slider slider swiper">
             <ul class="slider__slides swiper-wrapper">
               <li class="slider__slide swiper-slide">
-                <img src="images/content/1.jpg" alt="Готовое решение">
+                <img src="images/content/1.jpg" alt="Готовое решение" width="537" height="346">
               </li>
               <li class="slider__slide swiper-slide">
-                <img src="images/content/2.jpg" alt="Готовое решение">
+                <img src="images/content/2.jpg" alt="Готовое решение" width="537" height="346">
               </li>
               <li class="slider__slide swiper-slide">
-                <img src="images/content/3.jpg" alt="Готовое решение">
+                <img src="images/content/3.jpg" alt="Готовое решение" width="537" height="346">
               </li>
               <li class="slider__slide swiper-slide">
-                <img src="images/content/4.jpg" alt="Готовое решение">
+                <img src="images/content/4.jpg" alt="Готовое решение" width="537" height="346">
               </li>
             </ul>
+            <div class="swiper-pagination"></div>
             <div class="slider__arrows arrows">
               <button class="arrows__next swiper-button-next" type="button"
                 aria-label="Посмотреть следующий слайд"></button>
@@ -306,10 +344,8 @@
     </div>
 
     <div class="production__bottom">
-
       <div class="specification__col">
         <div class="production__box production__box--decisions">
-
           <h3 class="production__title">Готовые решения</h3>
           <div class="production__text">
             <p>Напольные отдельно стоящие камины.</p>
@@ -319,18 +355,19 @@
           <div class="production__slider slider swiper">
             <ul class="slider__slides swiper-wrapper">
               <li class="slider__slide swiper-slide">
-                <img src="images/content/1.jpg" alt="Готовое решение">
+                <img src="images/content/1.jpg" alt="Готовое решение" width="537" height="346">
               </li>
               <li class="slider__slide swiper-slide">
-                <img src="images/content/2.jpg" alt="Готовое решение">
+                <img src="images/content/2.jpg" alt="Готовое решение" width="537" height="346">
               </li>
               <li class="slider__slide swiper-slide">
-                <img src="images/content/3.jpg" alt="Готовое решение">
+                <img src="images/content/3.jpg" alt="Готовое решение" width="537" height="346">
               </li>
               <li class="slider__slide swiper-slide">
-                <img src="images/content/4.jpg" alt="Готовое решение">
+                <img src="images/content/4.jpg" alt="Готовое решение" width="537" height="346">
               </li>
             </ul>
+            <div class="swiper-pagination"></div>
             <div class="slider__arrows arrows">
               <button class="arrows__next swiper-button-next" type="button"
                 aria-label="Посмотреть следующий слайд"></button>
@@ -352,18 +389,19 @@
           <div class="production__slider slider swiper">
             <ul class="slider__slides swiper-wrapper">
               <li class="slider__slide swiper-slide">
-                <img src="images/content/1.jpg" alt="Готовое решение">
+                <img src="images/content/1.jpg" alt="Готовое решение" width="537" height="346">
               </li>
               <li class="slider__slide swiper-slide">
-                <img src="images/content/2.jpg" alt="Готовое решение">
+                <img src="images/content/2.jpg" alt="Готовое решение" width="537" height="346">
               </li>
               <li class="slider__slide swiper-slide">
-                <img src="images/content/3.jpg" alt="Готовое решение">
+                <img src="images/content/3.jpg" alt="Готовое решение" width="537" height="346">
               </li>
               <li class="slider__slide swiper-slide">
-                <img src="images/content/4.jpg" alt="Готовое решение">
+                <img src="images/content/4.jpg" alt="Готовое решение" width="537" height="346">
               </li>
             </ul>
+            <div class="swiper-pagination"></div>
             <div class="slider__arrows arrows">
               <button class="arrows__next swiper-button-next" type="button"
                 aria-label="Посмотреть следующий слайд"></button>
@@ -379,7 +417,8 @@
       <section class="experience" id="experience">
   <div class="container">
     <div class="experience__offer">
-      <p class="experience__text">Получите каталог с моделями и ценами на всю нашу продукцию</p>
+      <p class="experience__text">Получите каталог с моделями и ценами на всю
+        нашу продукцию</p>
       <button class="btn btn--flip" type="button">
         <span class="btn__front">Получить каталог!</span>
         <span class="btn__back">Открыть каталог!</span>
@@ -392,7 +431,7 @@
         <li class="experience-box__item">
           <div class="experience-box__img">
             <div class="experience-box__img">
-              <img src="images/content/10.jpg" alt="Проект №1">
+              <img src="images/content/10.jpg" alt="Проект №1" width="370" height="267">
             </div>
           </div>
           <div class="experience-box__bottom">
@@ -401,7 +440,7 @@
         </li>
         <li class="experience-box__item">
           <div class="experience-box__img">
-            <img src="images/content/8.jpg" alt="Проект №2">
+            <img src="images/content/8.jpg" alt="Проект №2" width="370" height="267">
           </div>
           <div class="experience-box__bottom">
             <p class="experience-box__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -409,7 +448,7 @@
         </li>
         <li class="experience-box__item">
           <div class="experience-box__img">
-            <img src="images/content/9.jpg" alt="Проект №3">
+            <img src="images/content/9.jpg" alt="Проект №3" width="370" height="267">
           </div>
           <div class="experience-box__bottom">
             <p class="experience-box__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -424,7 +463,7 @@
       <ul class="experience-box__list">
         <li class="experience-box__item experience-box__item--flip">
           <div class="experience-box__front">
-            <img src="images/content/5.jpg" alt="Проект №1">
+            <img src="images/content/5.jpg" alt="Проект №1" width="370" height="267">
           </div>
           <div class="experience-box__back">
             <div class="content">
@@ -435,7 +474,7 @@
         </li>
         <li class="experience-box__item experience-box__item--flip">
           <div class="experience-box__front">
-            <img src="images/content/6.jpg" alt="Проект №2">
+            <img src="images/content/6.jpg" alt="Проект №2" width="370" height="267">
           </div>
           <div class="experience-box__back">
             <div class="content">
@@ -446,7 +485,7 @@
         </li>
         <li class="experience-box__item experience-box__item--flip">
           <div class="experience-box__front">
-            <img src="images/content/7.jpg" alt="Проект №3">
+            <img src="images/content/7.jpg" alt="Проект №3" width="370" height="267">
           </div>
           <div class="experience-box__back">
             <div class="content">
@@ -466,7 +505,7 @@
     <div class="constructor__wrapper">
       <div class="constructor__top">
         <div class="constructor__preview">
-          <img src="images/content/constructor.jpg" alt="Камин">
+          <img src="images/content/constructor.jpg" alt="Камин" width="533" height="374">
         </div>
         <div class="constructor__details details-constructor">
           <div class="details-constructor length">
@@ -587,10 +626,10 @@
         </div>
         <div class="constructor__bottom-item">
           <span class="details-constructor__title">стоимость</span>
-          <p class="yellow" id="total-price" data-target="100000">0 <span>₽</span> </p>
+          <p class="yellow" id="total-price">0 <span>₽</span> </p>
         </div>
 
-        <button class="btn btn--flip">
+        <button class="btn btn--flip btn-request">
           <span class="btn__front">Оставить заявку</span>
           <span class="btn__back">Оставить заявку</span>
         </button>
@@ -603,7 +642,7 @@
   <div class="container">
     <h2 class="footer__title section-title">связаться с нами</h2>
     <div class="footer__wrapper">
-      <div class="footer__lists">
+      <div class="footer__lists" >
         <ul class="footer__list">
           <li class="footer__item">
             <span class="footer__label">WhatsApp</span>
@@ -630,7 +669,7 @@
       <div class="footer__phone">
         <span class="footer__label">Телефон</span>
         <a href="tel:89113064144">8 911 306 4144</a>
-        <button class="btn btn--border" type="button">Связаться с менеджером</button>
+        <button class="btn btn--border btn-back-call" type="button">Связаться с менеджером</button>
       </div>
     </div>
   </div>
@@ -655,9 +694,9 @@
 </footer>
   </div>
 
-  <!-- AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+ 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

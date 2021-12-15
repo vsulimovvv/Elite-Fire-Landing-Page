@@ -13,22 +13,15 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
   <!-- Style -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <!--* Scroll Top -->
-  <a class="scroll" href="#" id="scroll-top">
-    <svg>
-      <use xlink:href="images/sprite.svg#arrow"></use>
-    </svg>
-  </a>
+  @include('./components/_scroll-top.html')
 
   <div class="wrapper">
+    @include('./components/_popups.html')
     <div class="overlay"></div>
     @include('./components/_header.html')
     <main class="main">
@@ -37,15 +30,15 @@
       @include('./components/_refueling.html')
       @include('./components/_smart.html')
       @include('./components/_specifications.html')
-      @include('./components/_about.html')
+      @include('./components/_experience.html')
       @include('./components/_constructor.html')
     </main>
     @include('./components/_footer.html')
   </div>
 
-  <!-- AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+ 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

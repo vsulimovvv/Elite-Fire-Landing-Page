@@ -10,6 +10,10 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 130px;
+
+    @include breakpointsMaxW($bp-container) {
+      margin-bottom: calc(70px + (130 - 70) * ((100vw - 320px) / (1225 - 320)));
+    }
   }
 
   &__text {
@@ -147,10 +151,6 @@
         opacity: 1;
         visibility: visible;
         transition: 100ms ease-in;
-
-        // mask: url('../images/sprite.svg#info') no-repeat center/contain;
-        // background-color: var(--color-white);
-        // background-color: #000;
         background-image: url('../images/icons/info.svg');
         background-repeat: no-repeat;
         background-size: contain;

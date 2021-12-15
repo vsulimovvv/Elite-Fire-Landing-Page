@@ -23,6 +23,10 @@
     justify-content: space-between;
     padding-bottom: 76px;
 
+    @include breakpointsMaxW($bp-container) {
+      padding-bottom: calc(30px + (76 - 30) * ((100vw - 320px) / (1225 - 320)));
+    }
+
     @include breakpointsMaxW($bp-991) {
       flex-direction: column;
     }
