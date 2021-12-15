@@ -72,8 +72,17 @@
       line-height: 36px;
       color: #FFFFFF;
 
+      &:focus {
+        box-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+      }
+
       &:hover {
         @include wobble-animation();
+      }
+
+      &:active {
+        box-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.2);
       }
     }
   }
@@ -107,36 +116,18 @@
       position: relative;
       transition: 300ms ease-in;
 
+      &:focus {
+        box-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+      }
+
       &:hover {
         @include wobble-animation();
       }
 
-      // &:hover {
-      //   transform: scale(0.9);
-
-      //   &::after {
-      //     right: -10px;
-      //     top: -10px;
-      //     bottom: -10px;
-      //     left: -10px;
-
-      //     opacity: 1;
-      //     visibility: visible;
-      //   }
-      // }
-
-      // &::after {
-      //   position: absolute;
-      //   content: '';
-      //   border: var(--color-accent) solid 1px;
-      //   right: 0;
-      //   top: 0;
-      //   bottom: 0;
-      //   left: 0;
-      //   transition: 300ms ease-in;
-      //   opacity: 0;
-      //   visibility: hidden;
-      // }
+      &:active {
+        box-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.2);
+      }
     }
   }
 

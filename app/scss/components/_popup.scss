@@ -26,6 +26,13 @@
     padding: 60px 30px 40px;
     border-radius: 10px;
     width: calc(100% - 40px);
+
+    @include breakpointsMaxW($bp-container) {
+      padding-top: calc(40px + (60 - 40) * ((100vw - 320px) / (1225 - 320)));
+      padding-left: calc(20px + (30 - 20) * ((100vw - 320px) / (1225 - 320)));
+      padding-right: calc(20px + (30 - 20) * ((100vw - 320px) / (1225 - 320)));
+      padding-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1225 - 320)));
+    }
   }
 
   &__title {
@@ -34,6 +41,10 @@
     font-size: 35px;
     line-height: 1;
     margin-bottom: 20px;
+
+    @include breakpointsMaxW($bp-container) {
+      font-size: calc(28px + (35 - 28) * ((100vw - 320px) / (1225 - 320)));
+    }
   }
 
   &__close {

@@ -9,7 +9,9 @@
     align-items: flex-start;
 
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 20px;  @include breakpointsMaxW($bp-container) {
+        margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1225 - 320)));
+      }
     }
   }
 

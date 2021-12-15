@@ -97,6 +97,27 @@
     }
 
     &__bottom {
+      @include breakpointsMaxW($bp-991) {
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+        height: 60%;
+        backdrop-filter: blur(5px);
+
+        &::after {
+          opacity: 0;
+          visibility: hidden;
+          display: none;
+        }
+
+        .experience-box__content {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+
       position: absolute;
       width: 140px;
       height: 140px;
@@ -109,7 +130,9 @@
       color: #fff;
       z-index: 100;
       border-radius: 200px 200px 0px 0px;
-      transition: all 0.5s, border-radius 1.2s, top 1s;
+      transition: all 0.5s,
+      border-radius 1.2s,
+      top 1s;
       overflow: hidden;
 
       &::after {
@@ -167,59 +190,55 @@
       overflow-y: auto;
     }
   }
-}
 
-// ! Потом чутка модернизировать
-.experience-box__item--flip {
+  .experience-box__item--flip {
 
-  .experience-box__front,
-  .experience-box__back {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
-    backface-visibility: hidden;
-
-    position: absolute;
-    transition: 700ms;
-  }
-
-  .experience-box__front {
-    img {
-      height: 100%;
+    .experience-box__front,
+    .experience-box__back {
       width: 100%;
-      object-fit: cover;
+      height: 100%;
+      overflow: hidden;
+      backface-visibility: hidden;
+      position: absolute;
+      transition: 700ms;
     }
-
-    transform: perspective(1600px) rotateY(0deg);
-  }
-
-  .experience-box__back {
-    background-color: #fdfdfd;
-    color: #1d1d1d;
-    transform: perspective(1600px) rotateY(180deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-
-    h2 {
-      margin-bottom: 10px;
-    }
-  }
-
-  .content {
-    text-align: center;
-  }
-
-  &:hover {
 
     .experience-box__front {
-      transform: perspective(1600px) rotateY(-180deg);
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      transform: perspective(1600px) rotateY(0deg);
     }
 
     .experience-box__back {
-      transform: perspective(1600px) rotateY(0deg);
+      background-color: #fdfdfd;
+      color: #1d1d1d;
+      transform: perspective(1600px) rotateY(180deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
+
+    .content {
+      text-align: center;
+    }
+
+    &:hover {
+      .experience-box__front {
+        transform: perspective(1600px) rotateY(-180deg);
+      }
+
+      .experience-box__back {
+        transform: perspective(1600px) rotateY(0deg);
+      }
     }
   }
 }

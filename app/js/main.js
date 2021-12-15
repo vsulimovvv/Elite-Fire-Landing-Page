@@ -1,5 +1,42 @@
 window.addEventListener('DOMContentLoaded', () => {
-  AOS.init();
+  // * ==== Animation on scroll
+  (function () {
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '100px',
+      duration: 800,
+      delay: 100,
+    });
+
+    sr.reveal('.hero__wrapper, .refueling__bottom, .smart__preview, .production__bottom, .experience__offer, .constructor__bottom', {
+      delay: 400,
+      origin: 'bottom'
+    });
+    sr.reveal('.menu', {
+      origin: 'left'
+    });
+    sr.reveal('.advantages__title, .refueling__title, .refueling__text, .smart__title, .smart__descr, .production__col, .constructor__preview, .footer__lists, .footer__title, .constructor__title, .experience-box__title', {
+      origin: 'left'
+    });
+    sr.reveal('.advantages__descr, .refueling__feature, .production__col--right, .constructor__details, .footer__phone', {
+      origin: 'right'
+    });
+    sr.reveal('.advantages__preview', {
+      origin: 'top'
+    });
+    sr.reveal('.advantages__item, .experience-box__item', {
+      interval: 100,
+      origin: 'bottom',
+      delay: 200,
+    });
+    sr.reveal('.circle', {
+      interval: 100,
+      distance: '1px',
+      origin: 'bottom',
+      delay: 300,
+    })
+  })();
+
   // * ==== Show Menu
   (function showMenu() {
     const menuBtn = document.querySelector('.menu__toggle');
@@ -39,6 +76,7 @@ window.addEventListener('DOMContentLoaded', () => {
     },
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
   });
 
@@ -47,6 +85,10 @@ window.addEventListener('DOMContentLoaded', () => {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
   });
 

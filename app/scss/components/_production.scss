@@ -83,14 +83,6 @@
         margin-bottom: 28px;
       }
     }
-
-    &--decisions {
-      .production__text {}
-    }
-
-    &--accessories {
-      .production__text {}
-    }
   }
 
   &__shedule {
@@ -115,7 +107,6 @@
   &__item {
     font-size: 14px;
     line-height: 27px;
-
   }
 
   &__text {
@@ -132,6 +123,27 @@
   &__slider {
     margin-left: 0;
     height: calc(270px + (346 - 270) * ((100vw - 375px) / (1225 - 375)));
+    position: relative;
+
+    .swiper-pagination {
+      display: none;
+
+      @include breakpointsMaxW($bp-991) {
+        display: block;
+      }
+
+      &-bullet {
+        width: 12px;
+        height: 12px;
+        border: 2px solid var(--color-white);
+        background-color: transparent;
+      }
+
+      &-bullet-active {
+        background-color: var(--color-accent);
+        border-color: var(--color-accent);
+      }
+    }
 
     @include breakpointsMinW($bp-container) {
       height: 346px;

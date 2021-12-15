@@ -19,7 +19,7 @@ body {
 }
 
 .container-fluid {
-  max-width: 1920px;
+  width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
 }
@@ -54,7 +54,6 @@ body {
   padding: 14px 64px;
   position: relative;
   z-index: 5;
-  // overflow: hidden;
   font-size: 18px;
   line-height: 30px;
   font-family: inherit;
@@ -66,51 +65,21 @@ body {
     transform: scale(0.98);
   }
 
-  // &::after,
-  // &::before {
-  //   position: absolute;
-  //   content: '';
-  //   width: 184px;
-  //   height: 124px;
-  //   filter: blur(50px);
-  //   z-index: -1;
-  //   transition: transform 350ms ease;
-  // }
-
-  // &::after {
-  //   top: 18px;
-  //   left: -18px;
-
-  //   background: linear-gradient(270.21deg, rgba(249, 139, 77, 0.8) 18.08%, rgba(255, 103, 82, 0.8) 68.72%);
-  // }
-
-  // &::before {
-  //   bottom: 18px;
-  //   right: -18px;
-  //   background: linear-gradient(270.21deg, rgba(255, 217, 196, 0.8) 18.08%, rgba(255, 255, 255, 0.8) 68.72%);
-  // }
-
-
-
-  // &--shadow-anim {
-
-  //   &:hover {
-  //     box-shadow: 0 14px 28px rgba(249, 139, 77, 0.15), 0 10px 10px rgba(249, 139, 77, 0.15);
-  //     transform: translateY(-6px);
-  //   }
-
-  //   &:active {
-  //     transform: scale(0.98) translateY(-6px);
-  //     box-shadow: none;
-  //   }
-  // }
-
   &--border {
     transition: background-color 150ms ease;
     background-image: linear-gradient(to right, transparent 50%, #eec36e 50%);
     background-size: 200%;
     background-position: 0%;
     transition: background-position 350ms ease, color 300ms ease;
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+    }
+
+    &:active {
+      transform: scale(0.96);
+      box-shadow: inset 0px 7px 4px rgba(1, 1, 1, 0.9);
+    }
 
     &::after,
     &::before {
@@ -136,8 +105,13 @@ body {
     width: 280px;
     height: 60px;
 
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+    }
+
     &:active {
       transform: scale(0.96);
+      box-shadow: inset 0px 7px 4px rgba(1, 1, 1, 0.9);
     }
 
     .btn__front,
@@ -165,7 +139,6 @@ body {
 
     .btn__back {
       transform: rotateX(-90deg) translateZ(25px);
-
     }
 
     &:hover {
@@ -181,12 +154,24 @@ body {
 }
 
 .arrows {
+  @include breakpointsMaxW($bp-991) {
+    display: none;
+  }
 
   &__next,
   &__prev {
     width: 18px;
     height: 18px;
     top: 67%;
+    transition: 150ms ease;
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
+    }
+
+    &:active {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
 
     &::after {
       content: '';
@@ -203,11 +188,21 @@ body {
     background-image: url('../images/icons/chevron-left.svg');
     transform: rotate(180deg);
     right: 0;
+
+    &:hover {
+      right: -2px;
+      transform: scale(1.2) rotate(180deg);
+    }
   }
 
   &__prev {
     background-image: url('../images/icons/chevron-left.svg');
     left: 0;
+
+    &:hover {
+      left: -2px;
+      transform: scale(1.2);
+    }
   }
 }
 
@@ -219,7 +214,6 @@ body {
   opacity: 0;
   visibility: hidden;
   z-index: 10;
-
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.55);
@@ -234,11 +228,18 @@ body {
 }
 
 .logo {
+  &:focus {
+    animation: wobble-bottom 600ms ease;
+  }
+
   &:hover {
     animation: wobble-bottom 600ms ease;
   }
-}
 
+  &:active {
+    animation: wobble-bottom 600ms ease;
+  }
+}
 
 // Scroll Top
 .scroll {
